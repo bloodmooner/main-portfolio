@@ -1,0 +1,48 @@
+@import 'libs/bootstrap-reboot.min';
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+* {
+    //font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, label {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+button:active, button:focus {
+  outline: none;
+}
+button::-moz-focus-inner {
+  border: 0;
+}
+
+
+
+
+
+
