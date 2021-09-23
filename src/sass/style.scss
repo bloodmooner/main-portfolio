@@ -3,10 +3,19 @@
 
 @import 'libs/fonts';
 
+@import 'blocks/header/header';
+@import 'blocks/logo/logo';
+@import 'blocks/menu/menu';
+@import 'blocks/burger/burger';
+
 
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
+}
+
+body {
+  background-color: #151515;
 }
 
 *, *:before, *:after {
@@ -31,7 +40,7 @@ h1, h2, h3, h4, h5, h6, p, label {
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 1800px;
   width: 100%;
   margin: 0 auto;
 }
