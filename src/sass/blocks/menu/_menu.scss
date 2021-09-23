@@ -13,10 +13,10 @@
     font-weight: 800;
     font-size: 25px;
     line-height: 50px;
-    color: #FFFFFF;
     border-left: 1px solid #333333;
     cursor: pointer;
     &_active {
+      background-color: #FFFFFF;
     }
   }
 
@@ -25,9 +25,11 @@
     top: 50%;
     left: 50%;
     transform: translate3d(-50%, -50%, 0);
-
     display: block;
     color: #FFFFFF;
     display: flex;
+    &_active {
+      color: #151515;
+    }
   }
 }
