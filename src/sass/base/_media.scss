@@ -1,0 +1,32 @@
+/* header, menu, burger */
+@media (max-width: 1919px) {
+  /* .heading {
+    &__container {
+      padding: 30px 60px 48px 60px;
+    }
+  } */
+
+  .container {
+    max-width: max-content;
+    padding: 0 60px;
+  }
+
+  .heading {
+    &__title {
+      font-size: 78px;
+    }
+  }
+
+  .controls {
+    &__content {
+      font-size: 17px;
+    }
+    &__name {
+      font-size: 17px;
+    }
+    &__search {
+      font-size: 17px;
+    }
+  }
+
+}

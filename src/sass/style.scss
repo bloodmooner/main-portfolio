@@ -15,9 +15,16 @@
 @import 'blocks/bones/bones';
 
 
+
+
+
+@import 'base/media';
+
+
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
