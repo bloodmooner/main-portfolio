@@ -73,6 +73,14 @@
     &_active {
       color: #FFFFFF;
     }
+    &_subname {
+      margin-left: 10px;
+      font-weight: 300;
+    }
+  }
+
+  &__rating {
+    margin-left: 10px;
   }
 
   &__select {
