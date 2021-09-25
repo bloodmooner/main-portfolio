@@ -4,6 +4,9 @@
     padding: 30px 0 48px 0;
     &_comments {
       padding: 80px 0;
+      @include for-desktop-up {
+        padding: 30px 0;
+      }
     }
   }
 
@@ -13,6 +16,8 @@
     line-height: 100px;
     color: #FFFFFF;
     letter-spacing: -0.05em;
-
+    @include for-desktop-up {
+      font-size: 60px;
+    }
   }
 }

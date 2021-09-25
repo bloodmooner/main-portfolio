@@ -10,4 +10,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+  @include for-desktop-up {
+    font-size: 17px;
+  }
 }

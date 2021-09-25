@@ -5,6 +5,10 @@
     //grid-template-columns: 660px 480px 480px 185px;
     grid-template-columns: 0.37fr 0.26fr 0.26fr 0.1fr;
     grid-template-rows: 120px;
+    @include for-desktop-up {
+      grid-template-columns: 1.75fr 1.3fr 1.3fr 0.5fr;
+      grid-template-rows: 100px;
+    }
   }
 
   &__item {
@@ -17,6 +21,10 @@
     }
     &_centered {
 
+    }
+    &_statistic {
+      display: flex;
+      justify-content: flex-end;
     }
     &_active {
       background-color: #444444;
@@ -46,6 +54,9 @@
     font-size: 25px;
     line-height: 50px;
     color: #FFFFFF;
+    @include for-desktop-up {
+      font-size: 20px;
+    }
   }
 
   &__search {
@@ -56,6 +67,9 @@
     font-size: 25px;
     line-height: 50px;
     color: #FFFFFF;
+    @include for-desktop-up {
+      font-size: 20px;
+    }
   }
 
   &__name {
@@ -64,6 +78,10 @@
     font-size: 25px;
     line-height: 50px;
     color: #FFFFFF;
+    @include for-desktop-up {
+      font-size: 20px;
+      margin-left: 20px;
+    }
     &_centered {
       margin-left: 0;
       position: relative;
@@ -92,10 +110,16 @@
     font-size: 25px;
     line-height: 50px;
     color: #727272;
+    @include for-desktop-up {
+      font-size: 20px;
+    }
   }
 
   &__number {
     margin-left: 40px;
+    @include for-desktop-up {
+      margin-left: 0;
+    }
   }
 
   &__word {
