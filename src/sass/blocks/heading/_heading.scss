@@ -2,7 +2,9 @@
   border-bottom: 1px solid #444444;
   &__container {
     padding: 30px 0 48px 0;
-
+    &_comments {
+      padding: 80px 0;
+    }
   }
 
   &__title {

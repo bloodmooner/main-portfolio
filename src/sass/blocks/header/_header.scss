@@ -1,11 +1,12 @@
 .header {
-  border-bottom: 1px solid #333333;
+
   &__wrapper {
     display: grid;
     //grid-template-columns: 480px 1440px;
     grid-template-columns: 0.25fr 0.75fr;
     height: 120px;
     align-items: center;
+    border-bottom: 1px solid #333333;
 
   }
 }
