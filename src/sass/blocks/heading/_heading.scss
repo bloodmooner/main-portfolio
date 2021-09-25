@@ -19,5 +19,9 @@
     @include for-desktop-up {
       font-size: 60px;
     }
+    @include for-tablet-landscape-up {
+      font-size: 66px;
+      line-height: 66px;
+    }
   }
 }

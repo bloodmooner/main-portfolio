@@ -9,6 +9,10 @@
       grid-template-columns: 1.75fr 1.3fr 1.3fr 0.5fr;
       grid-template-rows: 100px;
     }
+    @include for-tablet-landscape-up {
+      grid-template-columns: 1.5fr 1.5fr 1.5fr 0.7fr;
+      grid-template-rows: 100px;
+    }
   }
 
   &__item {
@@ -57,6 +61,9 @@
     @include for-desktop-up {
       font-size: 20px;
     }
+    @include for-tablet-landscape-up {
+      font-size: 19px;
+    }
   }
 
   &__search {
@@ -81,6 +88,10 @@
     @include for-desktop-up {
       font-size: 20px;
       margin-left: 20px;
+    }
+    @include for-tablet-landscape-up {
+      font-size: 19px;
+      line-height: 19px;
     }
     &_centered {
       margin-left: 0;
@@ -113,11 +124,17 @@
     @include for-desktop-up {
       font-size: 20px;
     }
+    @include for-tablet-landscape-up {
+      font-size: 19px;
+    }
   }
 
   &__number {
     margin-left: 40px;
     @include for-desktop-up {
+      margin-left: 0;
+    }
+    @include for-tablet-landscape-up {
       margin-left: 0;
     }
   }

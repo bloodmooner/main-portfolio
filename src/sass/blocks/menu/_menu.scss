@@ -24,6 +24,10 @@
     @include for-desktop-up {
       font-size: 20px;
     }
+    @include for-tablet-landscape-up {
+      font-size: 18px;
+      line-height: 18px;
+    }
   }
 
   &__link {

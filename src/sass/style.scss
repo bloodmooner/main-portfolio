@@ -65,6 +65,9 @@ h1, h2, h3, h4, h5, h6, p, label {
   @include for-desktop-up {
     padding: 0 30px;
   }
+  @include for-tablet-landscape-up {
+    padding: 0 30px;
+  }
 }
 
 button:active, button:focus {
