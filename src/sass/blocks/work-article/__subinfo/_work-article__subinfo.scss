@@ -1,0 +1,17 @@
+.work-article {
+
+  &__subinfo {
+    margin-top: 60px;
+    display: flex;
+    justify-content: flex-end;
+
+    a {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 25px;
+      line-height: 50px;
+      text-decoration: underline;
+      color: #FFFFFF;
+    }
+  }
+}

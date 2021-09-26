@@ -1,0 +1,17 @@
+.controls {
+  &__search {
+    margin-left: 13px;
+    background-color: transparent;
+    border: none;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 50px;
+    color: #FFFFFF;
+    @include for-desktop-up {
+      font-size: 20px;
+    }
+    @include for-tablet-landscape-up {
+      font-size: 19px;
+    }
+  }
+}

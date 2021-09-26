@@ -1,0 +1,16 @@
+.heading {
+  &__title {
+    font-weight: 900;
+    font-size: 100px;
+    line-height: 100px;
+    color: #FFFFFF;
+    letter-spacing: -0.05em;
+    @include for-desktop-up {
+      font-size: 60px;
+    }
+    @include for-tablet-landscape-up {
+      font-size: 66px;
+      line-height: 66px;
+    }
+  }
+}

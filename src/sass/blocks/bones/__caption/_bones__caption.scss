@@ -1,0 +1,15 @@
+.bones {
+  &__caption {
+    margin-top: 40px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: justify;
+    color: #FFFFFF;
+    @include for-desktop-up {
+      font-size: 18px;
+      line-height: 23px;
+    }
+  }
+}

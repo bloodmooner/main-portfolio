@@ -1,0 +1,14 @@
+.controls {
+  &__content {
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 50px;
+    color: #727272;
+    @include for-desktop-up {
+      font-size: 20px;
+    }
+    @include for-tablet-landscape-up {
+      font-size: 19px;
+    }
+  }
+}

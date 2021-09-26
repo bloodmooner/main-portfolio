@@ -1,0 +1,13 @@
+.bones {
+  &__title {
+    margin-bottom: 40px;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 50px;
+    color: #FFFFFF;
+    @include for-desktop-up {
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
+}

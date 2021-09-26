@@ -1,0 +1,10 @@
+.comments {
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 640px;
+    @include for-desktop-up {
+      grid-auto-rows: 500px;
+    }
+  }
+}

@@ -6,22 +6,94 @@
 
 
 @import 'blocks/header/header';
+@import 'blocks/header/__wrapper/header__wrapper';
+@import 'blocks/header/__background-black/header__background-black';
+@import 'blocks/header/__background-img/header__background-img';
+
+
 @import 'blocks/logo/logo';
+@import 'blocks/logo/__wrapper/logo__wrapper';
+@import 'blocks/logo/__icon/logo__icon';
+@import 'blocks/logo/__text/logo__text';
+
+
 @import 'blocks/menu/menu';
+@import 'blocks/menu/__list/menu__list';
+@import 'blocks/menu/__element/menu__element';
+@import 'blocks/menu/__link/menu__link';
+
+
 @import 'blocks/burger/burger';
+@import 'blocks/burger/__container/burger__container';
+@import 'blocks/burger/__line/burger__line';
+
 
 @import 'blocks/heading/heading';
+@import 'blocks/heading/__container/heading__container';
+@import 'blocks/heading/__title/heading__title';
 
 @import 'blocks/controls/controls';
+@import 'blocks/controls/__container/controls__container';
+@import 'blocks/controls/__item/controls__item';
+@import 'blocks/controls/__icon/controls__icon';
+@import 'blocks/controls/__text/controls__text';
+@import 'blocks/controls/__search/controls__search';
+@import 'blocks/controls/__name/controls__name';
+@import 'blocks/controls/__rating/controls__rating';
+@import 'blocks/controls/__select/controls__select';
+@import 'blocks/controls/__content/controls__content';
+@import 'blocks/controls/__word/controls__word';
 
 @import 'blocks/bones/bones';
+@import 'blocks/bones/__container/bones__container';
+@import 'blocks/bones/__item/bones__item';
+@import 'blocks/bones/__shadow/bones__shadow';
+@import 'blocks/bones/__information/bones__information';
+@import 'blocks/bones/__subtitle/bones__subtitle';
+@import 'blocks/bones/__title/bones__title';
+@import 'blocks/bones/__separator/bones__separator';
+@import 'blocks/bones/__date/bones__date';
+@import 'blocks/bones/__line/bones__line';
+@import 'blocks/bones/__caption/bones__caption';
+@import 'blocks/bones/__button/bones__button';
 
 
-// work.html
 @import 'blocks/work/work';
+@import 'blocks/work/__container/work__container';
+
+
 @import 'blocks/work-information/work-information';
+@import 'blocks/work-information/__container/work-information__container';
+@import 'blocks/work-information/__img/work-information__img';
+@import 'blocks/work-information/__description/work-information__description';
+@import 'blocks/work-information/__title/work-information__title';
+@import 'blocks/work-information/__text/work-information__text';
+
+
 @import 'blocks/work-article/work-article';
+@import 'blocks/work-article/__header/work-article__header';
+@import 'blocks/work-article/__link/work-article__link';
+@import 'blocks/work-article/__title/work-article__title';
+@import 'blocks/work-article/__description/work-article__description';
+@import 'blocks/work-article/__subinfo/work-article__subinfo';
+
+
 @import 'blocks/comments/comments';
+@import 'blocks/comments/__title/comments__title';
+@import 'blocks/comments/__container/comments__container';
+@import 'blocks/comments/__item/comments__item';
+@import 'blocks/comments/__info/comments__info';
+@import 'blocks/comments/__photo/comments__photo';
+@import 'blocks/comments/__description/comments__description';
+@import 'blocks/comments/__role/comments__role';
+@import 'blocks/comments/__name/comments__name';
+@import 'blocks/comments/__separator/comments__separator';
+@import 'blocks/comments/__rating/comments__rating';
+@import 'blocks/comments/__line/comments__line';
+@import 'blocks/comments/__text/comments__text';
+
+
+
 @import 'blocks/rating/rating';
 
 @import 'base/media';

@@ -1,0 +1,22 @@
+.work-information {
+  &__title {
+    position: relative;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 50px;
+    letter-spacing: -0.05em;
+    color: #FFFFFF;
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: #333333;
+    }
+  }
+}

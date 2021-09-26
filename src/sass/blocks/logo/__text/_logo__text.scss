@@ -1,0 +1,18 @@
+.logo {
+  &__text {
+    margin-left: 27px;
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 50px;
+    color: #FFFFFF;
+    @include for-desktop-up {
+      font-size: 37px;
+      line-height: 40px;
+    }
+    @include for-tablet-landscape-up {
+      margin-left: 15px;
+      font-size: 30px;
+      line-height: 30px;
+    }
+  }
+}

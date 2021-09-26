@@ -1,0 +1,10 @@
+.bones {
+  &__subtitle {
+    font-weight: 600;
+    font-size: 25px;
+    color: #FFFFFF;
+    @include for-desktop-up {
+      font-size: 20px;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.menu {
+  &__link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    display: block;
+    color: #FFFFFF;
+    display: flex;
+    &_active {
+      color: #151515;
+    }
+  }
+}

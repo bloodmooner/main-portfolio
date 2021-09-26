@@ -1,0 +1,27 @@
+.controls {
+  &__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-right: 1px solid  #333333;
+    &:last-child {
+      border-right: none;
+    }
+    &_centered {
+
+    }
+    &_statistic {
+      display: flex;
+      justify-content: flex-end;
+      @include for-tablet-landscape-up {
+        justify-content: center;
+      }
+    }
+    &_active {
+      background-color: #444444;
+    }
+    @include for-tablet-landscape-up {
+      justify-content: center;
+    }
+  }
+}

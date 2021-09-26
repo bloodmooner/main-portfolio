@@ -1,0 +1,11 @@
+.controls {
+  &__number {
+    margin-left: 40px;
+    @include for-desktop-up {
+      margin-left: 0;
+    }
+    @include for-tablet-landscape-up {
+      margin-left: 0;
+    }
+  }
+}

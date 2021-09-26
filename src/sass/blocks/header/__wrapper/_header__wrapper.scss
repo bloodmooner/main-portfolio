@@ -1,0 +1,16 @@
+.header {
+  &__wrapper {
+    display: grid;
+    //grid-template-columns: 480px 1440px;
+    grid-template-columns: 0.25fr 0.75fr;
+    height: 120px;
+    align-items: center;
+    border-bottom: 1px solid #333333;
+    &_border-white {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    @include for-desktop-up {
+      height: 100px;
+    }
+  }
+}

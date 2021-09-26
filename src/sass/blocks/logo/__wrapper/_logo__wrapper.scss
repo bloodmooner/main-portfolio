@@ -1,0 +1,13 @@
+.logo {
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+    @include for-desktop-up {
+      padding-left: 30px;
+    }
+    @include for-tablet-landscape-up {
+      padding-left: 30px;
+    }
+  }
+}

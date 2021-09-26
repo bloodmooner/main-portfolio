@@ -1,0 +1,9 @@
+.comments {
+  &__photo {
+    max-width: 150px;
+    width: 100%;
+    @include for-desktop-up {
+      max-width: 130px;
+    }
+  }
+}

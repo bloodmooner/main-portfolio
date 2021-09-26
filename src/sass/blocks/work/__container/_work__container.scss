@@ -1,0 +1,9 @@
+.work {
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 80px;
+    padding-bottom: 60px;
+  }
+}
