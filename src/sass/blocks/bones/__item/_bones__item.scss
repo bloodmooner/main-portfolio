@@ -8,5 +8,8 @@
       background-size: cover;
       background-repeat: no-repeat;
     }
+    @include for-phone-only {
+      padding: 30px 15px 30px 15px;
+    }
   }
 }

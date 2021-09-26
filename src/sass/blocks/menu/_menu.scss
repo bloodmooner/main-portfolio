@@ -4,4 +4,7 @@
   @include for-tablet-portrait-up {
     width: fit-content;
   }
+  @include for-phone-only {
+    width: fit-content;
+  }
 }

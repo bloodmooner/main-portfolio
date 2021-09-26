@@ -11,5 +11,8 @@
     @include for-tablet-portrait-up {
       grid-template-columns: 1fr;
     }
+    @include for-phone-only {
+      grid-template-columns: 1fr;
+    }
   }
 }

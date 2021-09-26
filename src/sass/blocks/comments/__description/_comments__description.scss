@@ -1,5 +1,8 @@
 .comments {
   &__description {
     margin-left: 30px;
+    @include for-phone-only {
+      margin: 20px 0 0 0;
+    }
   }
 }

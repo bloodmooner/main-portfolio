@@ -15,6 +15,10 @@
         font-size: 18px;
         line-height: 23px;
       }
+      @include for-phone-only {
+        font-size: 15px;
+        line-height: 23px;
+      }
     }
   }
 }

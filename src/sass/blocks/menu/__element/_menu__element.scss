@@ -25,5 +25,11 @@
     &_display {
       display: block;
     }
+    @include for-phone-only {
+      display: none;
+    }
+    &_display {
+      display: block;
+    }
   }
 }

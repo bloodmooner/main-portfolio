@@ -18,6 +18,11 @@
       font-size: 18px;
       line-height: 18px;
     }
+    @include for-phone-only {
+      margin-left: 0;
+      font-size: 18px;
+      line-height: 18px;
+    }
     &_centered {
       margin-left: 0;
       position: relative;

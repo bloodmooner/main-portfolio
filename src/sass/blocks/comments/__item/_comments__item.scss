@@ -12,5 +12,9 @@
     @include for-tablet-portrait-up {
       padding: 30px;
     }
+    @include for-phone-only {
+      padding: 30px 60px 30px 60px;
+
+    }
   }
 }

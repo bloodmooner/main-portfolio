@@ -25,5 +25,11 @@
       font-size: 35px;
       line-height: 35px;
     }
+    @include for-phone-only {
+      margin-bottom: 30px;
+      padding-bottom: 30px;
+      font-size: 39px;
+      line-height: 50px;
+    }
   }
 }

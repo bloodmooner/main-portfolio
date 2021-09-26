@@ -15,5 +15,9 @@
       font-size: 20px;
       line-height: 30px;
     }
+    @include for-phone-only {
+      font-size: 20px;
+      line-height: 40px;
+    }
   }
 }

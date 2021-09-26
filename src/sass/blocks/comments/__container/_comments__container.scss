@@ -14,5 +14,9 @@
       grid-template-columns: 1fr;
       grid-auto-rows: minmax(450px, auto);
     }
+    @include for-phone-only {
+      grid-template-columns: 1fr;
+      grid-auto-rows: minmax(550px, auto);
+    }
   }
 }

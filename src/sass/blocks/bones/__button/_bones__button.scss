@@ -24,5 +24,12 @@
       font-size: 20px;
       line-height: 40px;
     }
+    @include for-phone-only {
+      margin-top: 50px;
+      width: 160px;
+      height: 50px;
+      font-size: 18px;
+      line-height: 40px;
+    }
   }
 }

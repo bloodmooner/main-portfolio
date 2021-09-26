@@ -9,5 +9,8 @@
     @include for-tablet-portrait-up {
       font-size: 21px;
     }
+    @include for-phone-only {
+      font-size: 15px;
+    }
   }
 }

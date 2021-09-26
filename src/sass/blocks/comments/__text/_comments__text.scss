@@ -1,6 +1,9 @@
 .comments {
   &__text {
     margin-top: 55px;
+    @include for-phone-only {
+      margin-top: 30px;
+    }
     p {
       font-style: normal;
       font-weight: 300;
@@ -8,6 +11,10 @@
       line-height: 25px;
       text-align: justify;
       color: #FFFFFF;
+      @include for-phone-only {
+        font-size: 14px;
+        line-height: 20px;
+      }
     }
   }
 }

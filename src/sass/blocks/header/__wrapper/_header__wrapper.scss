@@ -19,5 +19,9 @@
       display: flex;
       justify-content: space-between;
     }
+    @include for-phone-only {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 }

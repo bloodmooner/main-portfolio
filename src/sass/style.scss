@@ -143,6 +143,9 @@ h1, h2, h3, h4, h5, h6, p, label {
   @include for-tablet-portrait-up {
     padding: 0 30px;
   }
+  @include for-phone-only {
+    padding: 0 15px;
+  }
 }
 
 button:active, button:focus {
