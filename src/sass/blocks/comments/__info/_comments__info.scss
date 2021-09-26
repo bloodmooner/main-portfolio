@@ -3,5 +3,8 @@
     margin-bottom: 55px;
     display: flex;
     justify-content: space-between;
+    @include for-tablet-landscape-up {
+      justify-content: revert;
+    }
   }
 }

@@ -6,5 +6,8 @@
     line-height: 25px;
     text-align: justify;
     color: #FFFFFF;
+    @include for-tablet-landscape-up {
+      font-size: 18px;
+    }
   }
 }

@@ -10,5 +10,9 @@
       font-size: 37px;
       line-height: 38px;
     }
+    @include for-tablet-landscape-up {
+      font-size: 60px;
+      line-height: 60px;
+    }
   }
 }

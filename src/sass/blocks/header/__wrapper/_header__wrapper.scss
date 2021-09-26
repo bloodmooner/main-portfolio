@@ -12,5 +12,8 @@
     @include for-desktop-up {
       height: 100px;
     }
+    @include for-tablet-landscape-up {
+      height: 90px;
+    }
   }
 }

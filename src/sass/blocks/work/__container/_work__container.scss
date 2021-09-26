@@ -5,5 +5,8 @@
     grid-template-columns: 1fr 2fr;
     column-gap: 80px;
     padding-bottom: 60px;
+    @include for-tablet-landscape-up {
+      grid-template-columns: 1fr;
+    }
   }
 }

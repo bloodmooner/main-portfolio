@@ -1,5 +1,8 @@
 .work-information {
   &__description {
     margin-top: 60px;
+    @include for-tablet-landscape-up {
+      margin: 10px 0 0 30px;
+    }
   }
 }

@@ -1,5 +1,8 @@
 .work-article {
   &__header {
     margin-top: 140px;
+    @include for-tablet-landscape-up {
+      margin-top: 60px;
+    }
   }
 }

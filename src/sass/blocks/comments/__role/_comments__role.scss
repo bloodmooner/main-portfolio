@@ -5,5 +5,9 @@
     font-size: 25px;
     line-height: 50px;
     color: #FFFFFF;
+    @include for-tablet-landscape-up {
+      font-size: 30px;
+      line-height: 55px;
+    }
   }
 }

@@ -18,5 +18,8 @@
       height: 1px;
       background-color: #333333;
     }
+    @include for-tablet-landscape-up {
+      font-size: 40px;
+    }
   }
 }
