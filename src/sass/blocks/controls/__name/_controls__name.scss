@@ -13,6 +13,11 @@
       font-size: 19px;
       line-height: 19px;
     }
+    @include for-tablet-portrait-up {
+      margin-left: 0;
+      font-size: 18px;
+      line-height: 18px;
+    }
     &_centered {
       margin-left: 0;
       position: relative;
@@ -23,8 +28,7 @@
         transform: translateX(0);
       }
       @include for-tablet-portrait-up {
-        left: 0;
-        transform: translateX(0);
+
       }
     }
     &_active {

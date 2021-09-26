@@ -9,5 +9,8 @@
     @include for-tablet-landscape-up {
       padding: 30px;
     }
+    @include for-tablet-portrait-up {
+      padding: 30px;
+    }
   }
 }
