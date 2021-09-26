@@ -10,6 +10,11 @@
       line-height: 25px;
       text-align: justify;
       color: #FFFFFF;
+      @include for-tablet-portrait-up {
+        margin-top: 30px;
+        font-size: 18px;
+        line-height: 23px;
+      }
     }
   }
 }

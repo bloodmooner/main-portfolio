@@ -19,5 +19,11 @@
       font-size: 18px;
       line-height: 18px;
     }
+    @include for-tablet-portrait-up {
+      display: none;
+    }
+    &_display {
+      display: block;
+    }
   }
 }

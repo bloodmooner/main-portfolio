@@ -6,5 +6,8 @@
     @include for-desktop-up {
       font-size: 20px;
     }
+    @include for-tablet-portrait-up {
+      font-size: 21px;
+    }
   }
 }

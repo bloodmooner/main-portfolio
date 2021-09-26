@@ -4,5 +4,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     height: 100%;
+    @include for-tablet-portrait-up {
+      grid-template-columns: 100px;
+    }
   }
 }

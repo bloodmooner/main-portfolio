@@ -4,5 +4,8 @@
     @include for-tablet-landscape-up {
       margin-top: 60px;
     }
+    @include for-tablet-portrait-up {
+      margin-top: 60px;
+    }
   }
 }

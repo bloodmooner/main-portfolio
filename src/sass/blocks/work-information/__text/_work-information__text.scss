@@ -9,5 +9,9 @@
     @include for-tablet-landscape-up {
       font-size: 18px;
     }
+    @include for-tablet-portrait-up {
+      font-size: 18px;
+      line-height: 23px;
+    }
   }
 }

@@ -1,4 +1,7 @@
 .menu {
   height: 100%;
   width: 100%;
+  @include for-tablet-portrait-up {
+    width: fit-content;
+  }
 }

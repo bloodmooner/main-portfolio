@@ -12,5 +12,9 @@
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 100px 100px;
     }
+    @include for-tablet-portrait-up {
+      grid-template-columns: 1fr;
+      grid-template-rows: 70px 70px 70px 70px;
+    }
   }
 }

@@ -10,5 +10,9 @@
       grid-template-columns: 1fr;
       grid-auto-rows: minmax(450px, auto);
     }
+    @include for-tablet-portrait-up {
+      grid-template-columns: 1fr;
+      grid-auto-rows: minmax(450px, auto);
+    }
   }
 }

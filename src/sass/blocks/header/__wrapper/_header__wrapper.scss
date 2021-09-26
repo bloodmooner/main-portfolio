@@ -15,5 +15,9 @@
     @include for-tablet-landscape-up {
       height: 90px;
     }
+    @include for-tablet-portrait-up {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 }

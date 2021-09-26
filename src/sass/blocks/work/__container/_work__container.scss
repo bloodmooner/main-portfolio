@@ -8,5 +8,8 @@
     @include for-tablet-landscape-up {
       grid-template-columns: 1fr;
     }
+    @include for-tablet-portrait-up {
+      grid-template-columns: 1fr;
+    }
   }
 }

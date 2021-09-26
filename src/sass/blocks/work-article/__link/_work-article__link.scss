@@ -11,5 +11,9 @@
     @include for-tablet-landscape-up {
       font-size: 20px;
     }
+    @include for-tablet-portrait-up {
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 }

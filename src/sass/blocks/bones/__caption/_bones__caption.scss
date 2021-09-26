@@ -11,5 +11,9 @@
       font-size: 18px;
       line-height: 23px;
     }
+    @include for-tablet-portrait-up {
+      font-size: 18px;
+      line-height: 23px;
+    }
   }
 }

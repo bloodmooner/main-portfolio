@@ -22,6 +22,10 @@
         left: 0;
         transform: translateX(0);
       }
+      @include for-tablet-portrait-up {
+        left: 0;
+        transform: translateX(0);
+      }
     }
     &_active {
       color: #FFFFFF;
