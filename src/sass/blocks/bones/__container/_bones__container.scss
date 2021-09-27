@@ -29,5 +29,20 @@
         grid-auto-rows: minmax(320px, auto);
       }
     }
+    &_prices {
+      grid-template-rows: minmax(640px, auto);
+      @include for-desktop-up {
+        grid-template-rows: minmax(570px,auto);
+      }
+      @include for-tablet-landscape-up {
+        grid-template-rows: minmax(640px,auto) minmax(640px,auto);
+      }
+      @include for-tablet-portrait-up {
+        grid-template-rows: auto;
+      }
+      @include for-phone-only {
+        grid-template-rows: auto;
+      }
+    }
   }
 }

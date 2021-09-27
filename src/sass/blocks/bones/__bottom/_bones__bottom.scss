@@ -1,0 +1,13 @@
+.bones {
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include for-tablet-portrait-up {
+      margin-top: 60px;
+    }
+    @include for-phone-only {
+      margin-top: 60px;
+    }
+  }
+}

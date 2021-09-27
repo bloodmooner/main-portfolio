@@ -8,6 +8,11 @@
       background-size: cover;
       background-repeat: no-repeat;
     }
+    &_prices {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
     @include for-phone-only {
       padding: 30px 15px 30px 15px;
     }

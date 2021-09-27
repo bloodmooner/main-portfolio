@@ -11,6 +11,7 @@
     line-height: 50px;
     text-align: center;
     color: #FFFFFF;
+
     @include for-desktop-up {
       width: 160px;
       height: 50px;
@@ -30,6 +31,19 @@
       height: 50px;
       font-size: 18px;
       line-height: 40px;
+    }
+
+    &_no-margin {
+      margin: 0;
+      @include for-tablet-landscape-up {
+        margin: 0;
+      }
+      @include for-tablet-portrait-up {
+        margin: 0;
+      }
+      @include for-phone-only {
+        margin: 0;
+      }
     }
   }
 }
