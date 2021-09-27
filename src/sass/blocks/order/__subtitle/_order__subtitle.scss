@@ -1,0 +1,8 @@
+.order {
+  &__subtitle {
+    margin-bottom: 60px;
+    @include for-phone-only {
+      margin-bottom: 30px;
+    }
+  }
+}

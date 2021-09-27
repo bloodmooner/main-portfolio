@@ -1,0 +1,9 @@
+.order {
+  &__plan {
+    margin-bottom: 70px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 120px;
+    border: 1px solid #333333;
+}
+}

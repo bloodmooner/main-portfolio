@@ -1,0 +1,13 @@
+.order {
+  &__link {
+    display: block;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 50px;
+    color: #FFFFFF;
+    &_underline {
+      text-decoration-line: underline;
+    }
+  }
+}

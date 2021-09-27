@@ -1,0 +1,16 @@
+.order {
+  &__input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #333333;
+    width: 100%;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 50px;
+    color: #727272;
+    @include for-phone-only {
+      font-size: 14px;
+    }
+  }
+}

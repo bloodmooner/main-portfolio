@@ -1,0 +1,13 @@
+.order {
+  &__validate {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 18px;
+    background-image: url('../../../../assets/svg/validation-sign.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}

@@ -1,0 +1,9 @@
+.order {
+  &__input-container {
+    position: relative;
+    &_right-side {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}
