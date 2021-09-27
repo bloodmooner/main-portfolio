@@ -6,6 +6,9 @@
     @include for-tablet-landscape-up {
       justify-content: revert;
     }
+    @include for-tablet-portrait-up {
+      justify-content: revert;
+    }
     @include for-phone-only {
       flex-direction: column;
       align-items: center;
