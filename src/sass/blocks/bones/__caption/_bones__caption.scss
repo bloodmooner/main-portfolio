@@ -19,5 +19,13 @@
       font-size: 14px;
       line-height: 20px;
     }
+    &_display-none {
+      display: none;
+    }
+    &_active {
+      display: block;
+      font-weight: 600;
+      color: #000000;
+    }
   }
 }

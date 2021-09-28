@@ -7,6 +7,7 @@
     height: 100%;
     z-index: -1;
     background: #151515;
-    opacity: 0.6;
+    opacity: 0.5;
+    filter: blur(5px);
   }
 }

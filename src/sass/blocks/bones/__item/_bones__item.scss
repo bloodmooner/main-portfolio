@@ -13,6 +13,9 @@
       flex-direction: column;
       justify-content: space-between;
     }
+    &_active {
+      background-color: #fff;
+    }
     @include for-phone-only {
       padding: 30px 15px 30px 15px;
     }

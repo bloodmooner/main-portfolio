@@ -12,5 +12,8 @@
     @include for-phone-only {
       font-size: 15px;
     }
+    &_active {
+      color: #000000;
+    }
   }
 }
