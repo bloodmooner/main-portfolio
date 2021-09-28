@@ -1,4 +1,11 @@
 .header {
   position: relative;
+  &_full-height {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1.5fr 3fr;
+    height: 100vh;
+
+  }
 }
 

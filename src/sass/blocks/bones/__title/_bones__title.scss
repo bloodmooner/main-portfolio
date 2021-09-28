@@ -17,10 +17,17 @@
       font-size: 22px;
       line-height: 32px;
     }
+    &_black {
+      color: #000000;
+    }
+    &_small {
+      font-weight: 600;
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
     &_active {
       padding-bottom: 65px;
       position: relative;
-      color: #000000;
       &:after {
         content: '';
         position: absolute;

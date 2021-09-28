@@ -1,0 +1,7 @@
+.bones {
+  &__description {
+    &::nth-child(2) {
+      padding-left: 25px;
+    }
+  }
+}
