@@ -115,6 +115,8 @@
 
 @import 'blocks/burger-menu/burger-menu';
 
+@import 'blocks/modal-bg/modal-bg';
+
 
 
 
@@ -126,6 +128,7 @@ html {
 
 body {
   background-color: #151515;
+  position: relative;
 }
 
 *, *:before, *:after {
