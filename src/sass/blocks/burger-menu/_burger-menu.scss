@@ -6,11 +6,26 @@
   background-color: #ffff;
   z-index: 100;
   transition: .5s all;
+  @include for-phone-only {
+    width: 100%;
+  }
   &_closed {
     transform: translateX(100%);
   }
   &__container {
     width: 640px;
+    @include for-desktop-up {
+      width: 540px;
+    }
+    @include for-tablet-landscape-up {
+      width: 540px;
+    }
+    @include for-tablet-portrait-up {
+      width: 540px;
+    }
+    @include for-phone-only {
+      width: 100%;
+    }
   }
   &__header {
     padding: 35px 60px;
@@ -28,6 +43,9 @@
       height: 1px;
       background-color: rgba(0, 0, 0, 0.2);
     }
+    @include for-phone-only {
+      padding: 15px;
+    }
   }
 
   &__title {
@@ -37,6 +55,18 @@
     line-height: 50px;
     letter-spacing: -0.05em;
     color: #151515;
+    @include for-desktop-up {
+      font-size: 40px;
+      line-height: normal;
+    }
+    @include for-tablet-landscape-up {
+      font-size: 30px;
+      line-height: normal;
+    }
+    @include for-phone-only {
+      font-size: 30px;
+      line-height: normal;
+    }
   }
 
   &__close {
@@ -46,6 +76,10 @@
     background-size: cover;
     background-repeat: no-repeat;
     cursor: pointer;
+    @include for-phone-only {
+      width: 17px;
+      height: 17px;
+    }
   }
 
   &__social-container {
@@ -55,6 +89,13 @@
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     column-gap: 30px;
+    @include for-phone-only {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 30px 30px;
+      row-gap: 10px;
+      column-gap: 10px;
+      padding: 15px 15px;
+    }
     &::after {
       content: '';
       position: absolute;
@@ -74,6 +115,9 @@
 
   &__social-img {
     width: 100%;
+    @include for-phone-only {
+      width: 35px;
+    }
   }
 
   &__menu {
@@ -89,6 +133,18 @@
     font-weight: 800;
     font-size: 30px;
     letter-spacing: -0.05em;
+    @include for-desktop-up {
+      font-size: 25px;
+      padding: 18px 60px;
+    }
+    @include for-tablet-landscape-up {
+      font-size: 20px;
+      padding: 19px 60px;
+    }
+    @include for-phone-only {
+      padding: 15px;
+      font-size: 18px;
+    }
     &::after {
       content: '';
       position: absolute;
@@ -113,6 +169,12 @@
 
   &__footer {
     padding-top: 23px;
+    @include for-tablet-landscape-up {
+      padding-top: 18px;
+    }
+    @include for-phone-only {
+      padding-top: 10px;
+    }
   }
 
   &__footer-list {
@@ -123,6 +185,16 @@
     padding: 0px 60px;
     font-weight: 600;
     font-size: 25px;
+    @include for-desktop-up {
+      font-size: 20px;
+    }
+    @include for-tablet-landscape-up {
+      font-size: 20px;
+    }
+    @include for-phone-only {
+      font-size: 14px;
+      padding: 0 15px;
+    }
   }
 
   &__footer-link {
