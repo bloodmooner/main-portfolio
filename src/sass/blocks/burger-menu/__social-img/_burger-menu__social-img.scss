@@ -1,0 +1,8 @@
+.burger-menu {
+  &__social-img {
+    width: 100%;
+    @include for-phone-only {
+      width: 35px;
+    }
+  }
+}

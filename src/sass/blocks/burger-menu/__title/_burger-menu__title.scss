@@ -1,0 +1,22 @@
+.burger-menu {
+  &__title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 50px;
+    letter-spacing: -0.05em;
+    color: #151515;
+    @include for-desktop-up {
+      font-size: 40px;
+      line-height: normal;
+    }
+    @include for-tablet-landscape-up {
+      font-size: 30px;
+      line-height: normal;
+    }
+    @include for-phone-only {
+      font-size: 30px;
+      line-height: normal;
+    }
+  }
+}

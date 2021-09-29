@@ -1,0 +1,14 @@
+.burger-menu {
+  &__close {
+    width: 22px;
+    height: 22px;
+    background-image: url('../../../assets/svg/close.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    @include for-phone-only {
+      width: 17px;
+      height: 17px;
+    }
+  }
+}

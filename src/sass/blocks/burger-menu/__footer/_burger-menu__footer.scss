@@ -1,0 +1,11 @@
+.burger-menu {
+  &__footer {
+    padding-top: 23px;
+    @include for-tablet-landscape-up {
+      padding-top: 18px;
+    }
+    @include for-phone-only {
+      padding-top: 10px;
+    }
+  }
+}

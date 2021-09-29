@@ -1,0 +1,18 @@
+.burger-menu {
+    &__container {
+      width: 640px;
+      @include for-desktop-up {
+        width: 540px;
+      }
+      @include for-tablet-landscape-up {
+        width: 540px;
+      }
+      @include for-tablet-portrait-up {
+        width: 540px;
+      }
+      @include for-phone-only {
+        width: 100%;
+      }
+    }
+
+}

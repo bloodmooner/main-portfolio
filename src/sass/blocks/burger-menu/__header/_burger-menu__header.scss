@@ -1,0 +1,22 @@
+.burger-menu {
+  &__header {
+    padding: 35px 60px;
+    position: relative;
+    padding-bottom: 34px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+    @include for-phone-only {
+      padding: 15px;
+    }
+  }
+}

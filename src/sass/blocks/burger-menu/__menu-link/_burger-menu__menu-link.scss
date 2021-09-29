@@ -1,0 +1,12 @@
+.burger-menu {
+  &__menu-link {
+    color: rgba(0, 0, 0, 0.2);
+
+    &_underline {
+      text-decoration: underline;
+    }
+    &:hover {
+      color: #151515;
+    }
+  }
+}
