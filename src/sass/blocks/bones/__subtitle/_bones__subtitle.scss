@@ -1,19 +1,24 @@
 .bones {
   &__subtitle {
     font-weight: 600;
-    font-size: 25px;
+    font-size: 0.5em;
     color: #FFFFFF;
+    @include for-big-desktop-up {
+      font-size: calc(0.5em + 1vw);
+      line-height: 1em;
+    }
     @include for-desktop-up {
-      font-size: 20px;
+      font-size: 0.4em;
     }
     @include for-tablet-portrait-up {
-      font-size: 21px;
+      font-size: 0.4em;
     }
     @include for-phone-only {
-      font-size: 15px;
+      font-size: 0.3em;
     }
     &_active {
       color: #000000;
     }
   }
 }
+

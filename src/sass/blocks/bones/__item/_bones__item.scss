@@ -1,9 +1,14 @@
 .bones {
   &__item {
     position: relative;
-    padding: 60px;
+    padding: 40px 60px 60px 60px;
     border-right: 1px solid #333333;
     border-bottom: 1px solid #333333;
+    font-size: 20px;
+    line-height: 25px;
+    @include for-big-desktop-up {
+      padding: 5% 15% 5% 15%;
+    }
     &_border-white {
       border-right: 1px solid rgba(255, 255, 255, 0.2);
       border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -17,11 +22,33 @@
       flex-direction: column;
       justify-content: space-between;
     }
+    &_work {
+      @include for-big-desktop-up {
+        padding: 10% 20% 10% 20%;
+      }
+    }
     &_active {
       background-color: #fff;
+    }
+    &_paddingtop-50 {
+      padding: 50px 60px 60px 60px;
+      @include for-big-desktop-up {
+        padding: 5% 15% 5% 15%;
+      }
+    }
+    @include for-desktop-up {
+      padding: 40px 30px 40px 30px;
+    }
+    @include for-tablet-landscape-up {
+      padding: 40px 30px 40px 30px;
+    }
+    @include for-tablet-portrait-up {
+      padding: 40px 30px 40px 30px;
     }
     @include for-phone-only {
       padding: 30px 15px 30px 15px;
     }
   }
 }
+
+

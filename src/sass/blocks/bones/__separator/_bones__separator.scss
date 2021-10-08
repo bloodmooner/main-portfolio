@@ -2,5 +2,8 @@
   &__separator {
     display: flex;
     align-items: center;
+    &_margin-65 {
+      margin: 65px 0;
+    }
   }
 }

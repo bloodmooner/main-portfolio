@@ -2,23 +2,36 @@
   &__caption {
     margin-top: 40px;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 600;
     font-size: 20px;
     line-height: 25px;
-    text-align: justify;
     color: #FFFFFF;
-    @include for-desktop-up {
-      font-size: 18px;
-      line-height: 23px;
+    @include for-big-desktop-up {
+      margin: 10% 0 10% 0;
     }
-    @include for-tablet-portrait-up {
-      font-size: 18px;
-      line-height: 23px;
+    p {
+      font-size: 1em;
+      line-height: 1em;
+      @include for-big-desktop-up {
+        font-size: calc(1em + 0.7vw);
+        line-height: 1em;
+      }
+      @include for-desktop-up {
+        font-size: 0.9em;
+        line-height: 1em;
+      }
+      @include for-tablet-portrait-up {
+        font-size: 0.9em;
+        line-height: 1em;
+      }
+      @include for-phone-only {
+        font-size: 0.7em;
+        line-height: 1.2em;
+      }
     }
-    @include for-phone-only {
-      font-size: 14px;
-      line-height: 20px;
-    }
+
+
+
     &_display-none {
       display: none;
     }
@@ -29,3 +42,4 @@
     }
   }
 }
+

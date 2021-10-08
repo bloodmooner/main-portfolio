@@ -1,21 +1,27 @@
 .bones {
   &__title {
+    padding-top: 10px;
     margin-bottom: 40px;
     font-weight: 800;
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 1em;
+    line-height: 1em;
     color: #FFFFFF;
+    letter-spacing: -0.05em;
+    @include for-big-desktop-up {
+      font-size: calc(1em + 1vw);
+      line-height: 1em;
+    }
     @include for-desktop-up {
-      font-size: 30px;
-      line-height: 40px;
+      font-size: 0.8em;
+      line-height: 1em;
     }
     @include for-tablet-portrait-up {
-      font-size: 32px;
-      line-height: 42px;
+      font-size: 0.8em;
+      line-height: 1em;
     }
     @include for-phone-only {
-      font-size: 22px;
-      line-height: 32px;
+      font-size: 0.5em;
+      line-height: 1em;
     }
     &_black {
       color: #000000;
@@ -40,3 +46,4 @@
     }
   }
 }
+

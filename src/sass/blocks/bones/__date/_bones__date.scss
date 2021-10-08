@@ -5,17 +5,23 @@
     font-size: 25px;
     line-height: 50px;
     color: #727272;
-    @include for-desktop-up {
-      font-size: 20px;
-      line-height: 35px;
-    }
-    @include for-tablet-portrait-up {
-      font-size: 21px;
-      line-height: 21px;
-    }
-    @include for-phone-only {
-      font-size: 16px;
-      line-height: 16px;
+    span {
+      @include for-big-desktop-up {
+        font-size: calc(1em + 0.5vw);
+      }
+      @include for-desktop-up {
+        font-size: 0.8em;
+        line-height: 1em;
+      }
+      @include for-tablet-portrait-up {
+        font-size: 0.85em;
+        line-height: 1em;
+      }
+      @include for-phone-only {
+        font-size: 0.64em;
+        line-height: 1em;
+      }
     }
   }
 }
+
