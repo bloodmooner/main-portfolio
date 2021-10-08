@@ -2,26 +2,29 @@
   &__name {
     margin-left: 40px;
     font-weight: 800;
-    font-size: 25px;
-    line-height: 50px;
+    font-size: 1em;
+    line-height: 1em;
     color: #FFFFFF;
+    @include for-big-desktop-up {
+      font-size: calc(1em + 0.5vw);
+    }
     @include for-desktop-up {
-      font-size: 20px;
+      font-size: 0.8em;
       margin-left: 20px;
     }
     @include for-tablet-landscape-up {
-      font-size: 19px;
-      line-height: 19px;
+      font-size: 0.75em;
+      line-height: 1em;
     }
     @include for-tablet-portrait-up {
       margin-left: 0;
-      font-size: 18px;
-      line-height: 18px;
+      font-size: 0.7em;
+      line-height: 1em;
     }
     @include for-phone-only {
       margin-left: 0;
-      font-size: 18px;
-      line-height: 18px;
+      font-size: 0.7em;
+      line-height: 1em;
     }
     &_centered {
       margin-left: 0;
@@ -33,7 +36,12 @@
         transform: translateX(0);
       }
       @include for-tablet-portrait-up {
-
+        left: 0;
+        transform: translateX(0);
+      }
+      @include for-phone-only {
+        left: 0;
+        transform: translateX(0);
       }
     }
     &_active {
@@ -42,6 +50,11 @@
     &_subname {
       margin-left: 10px;
       font-weight: 300;
+      @include for-phone-only {
+        display: block;
+        margin: 10px 0 0 0;
+      }
     }
   }
 }
+

@@ -4,19 +4,5 @@
     font-size: 25px;
     line-height: 50px;
     color: #727272;
-    @include for-desktop-up {
-      font-size: 20px;
-    }
-    @include for-tablet-landscape-up {
-      font-size: 19px;
-    }
-    @include for-tablet-portrait-up {
-      font-size: 18px;
-      line-height: 18px;
-    }
-    @include for-phone-only {
-      font-size: 18px;
-      line-height: 18px;
-    }
   }
 }

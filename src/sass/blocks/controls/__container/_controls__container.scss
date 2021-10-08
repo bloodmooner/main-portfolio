@@ -4,6 +4,10 @@
     //grid-template-columns: 660px 480px 480px 185px;
     grid-template-columns: 0.37fr 0.26fr 0.26fr 0.1fr;
     grid-template-rows: 120px;
+    @include for-big-desktop-up {
+      grid-auto-rows: auto;
+      grid-template-rows: auto;
+    }
     @include for-desktop-up {
       grid-template-columns: 1.75fr 1.3fr 1.3fr 0.5fr;
       grid-template-rows: 100px;
@@ -13,12 +17,12 @@
       grid-template-rows: 100px 100px;
     }
     @include for-tablet-portrait-up {
-      grid-template-columns: 1fr;
-      grid-template-rows: 70px 70px 70px 70px;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 80px 80px;
     }
     @include for-phone-only {
       grid-template-columns: 1fr;
-      grid-template-rows: 70px 70px 70px 70px;
+      grid-template-rows: 90px 90px 90px 90px;
     }
   }
 }

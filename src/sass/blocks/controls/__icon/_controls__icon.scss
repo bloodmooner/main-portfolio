@@ -13,5 +13,9 @@
     &_back {
       background-image: url('../../../assets/svg/back.svg');
     }
+    @include for-big-desktop-up {
+      height: calc(24px + 0.4vw);
+      width: calc(24px + 0.4vw);
+    }
   }
 }

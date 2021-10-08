@@ -1,5 +1,8 @@
 .controls {
   &__rating {
     margin-left: 10px;
+    @include for-phone-only {
+      margin-top: 10px;
+    }
   }
 }
