@@ -6,11 +6,31 @@
     font-style: normal;
     font-weight: 800;
     font-size: 25px;
-    line-height: 50px;
     text-align: center;
     color: #FFFFFF;
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.2);
+    span {
+      @include for-big-desktop-up {
+        display: block;
+        font-size: calc(1em + 0.5vw);
+      }
+      @include for-desktop-up {
+        font-size: 1em;
+      }
+      @include for-tablet-portrait-up {
+        font-size: 1em;
+      }
+      @include for-phone-only {
+        font-size: 1em;
+      }
+    }
+    @include for-big-desktop-up {
+      width: max-content;
+      height: max-content;
+      padding: 4%;
+      margin-top: 10%;
+    }
     @include for-desktop-up {
       margin-top: 80px;
     }
@@ -25,3 +45,4 @@
     }
   }
 }
+

@@ -2,6 +2,9 @@
   &__photo {
     max-width: 150px;
     width: 100%;
+    @include for-big-desktop-up {
+      max-width: 40%;
+    }
     @include for-desktop-up {
       max-width: 130px;
     }
@@ -9,7 +12,7 @@
       max-width: 175px;
     }
     @include for-phone-only {
-      max-width: 300px;
+      max-width: 100%;
     }
   }
 }

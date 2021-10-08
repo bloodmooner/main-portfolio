@@ -2,17 +2,21 @@
   &__name {
     font-style: normal;
     font-weight: 600;
-    font-size: 50px;
-    line-height: 50px;
+    font-size: 1em;
+    line-height: 1em;
     letter-spacing: -0.05em;
     color: #FFFFFF;
+    @include for-big-desktop-up {
+      font-size: calc(1em + 0.9vw);
+    }
     @include for-desktop-up {
-      font-size: 37px;
-      line-height: 38px;
+      font-size: 0.8em;
+      line-height: 1em;
     }
     @include for-tablet-landscape-up {
-      font-size: 60px;
-      line-height: 60px;
+      font-size: 1.2em;
+      line-height: 1em;
     }
   }
 }
+

@@ -2,12 +2,16 @@
   &__role {
     font-style: normal;
     font-weight: 300;
-    font-size: 25px;
-    line-height: 50px;
+    font-size: 0.5em;
+    line-height: 1em;
     color: #FFFFFF;
+    @include for-big-desktop-up {
+      font-size: calc(0.5em + 0.5vw);
+    }
     @include for-tablet-landscape-up {
-      font-size: 30px;
-      line-height: 55px;
+      font-size: 0.6em;
+      line-height: 1.8em;
     }
   }
 }
+
