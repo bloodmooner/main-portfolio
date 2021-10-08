@@ -5,8 +5,8 @@
     padding-bottom: 40px;
     font-style: normal;
     font-weight: 800;
-    font-size: 50px;
-    line-height: 50px;
+    font-size: 1em;
+    line-height: 1em;
     letter-spacing: -0.05em;
     color: #FFFFFF;
     &:after {
@@ -18,18 +18,22 @@
       height: 1px;
       background-color: #333333;
     }
+    @include for-big-desktop-up {
+      font-size: calc(1em + 1vw);
+    }
     @include for-tablet-landscape-up {
-      font-size: 40px;
+      font-size: 0.8em;
     }
     @include for-tablet-portrait-up {
-      font-size: 35px;
-      line-height: 35px;
+      font-size: 0.7em;
+      line-height: 1em;
     }
     @include for-phone-only {
       margin-bottom: 30px;
       padding-bottom: 30px;
-      font-size: 39px;
-      line-height: 50px;
+      font-size: 0.8em;
+      line-height: 1em;
     }
   }
 }
+
