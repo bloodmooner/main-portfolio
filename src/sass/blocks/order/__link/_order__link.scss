@@ -3,9 +3,12 @@
     display: block;
     font-style: normal;
     font-weight: 800;
-    font-size: 25px;
-    line-height: 50px;
+    font-size: 1em;
+    line-height: 2em;
     color: #FFFFFF;
+    @include for-big-desktop-up {
+      font-size: calc(1em + 0.3vw);
+    }
     &_underline {
       text-decoration-line: underline;
     }

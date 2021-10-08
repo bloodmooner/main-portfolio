@@ -6,11 +6,15 @@
     width: 100%;
     font-style: normal;
     font-weight: 800;
-    font-size: 25px;
-    line-height: 50px;
     color: #727272;
+    font-size: 1em;
+    line-height: 1em;
+    @include for-big-desktop-up {
+      font-size: calc(1em + 0.5vw);
+    }
     @include for-phone-only {
       font-size: 14px;
     }
   }
 }
+
