@@ -2,21 +2,25 @@
   &__title {
     font-style: normal;
     font-weight: 800;
-    font-size: 50px;
-    line-height: 50px;
+    font-size: 1em;
+    line-height: 1em;
     letter-spacing: -0.05em;
     color: #FFFFFF;
+    @include for-big-desktop-up {
+      font-size: calc(1em + 1vw);
+    }
     @include for-tablet-landscape-up {
-      font-size: 39px;
-      line-height: 39px;
+      font-size: 0.8em;
+      line-height: 1em;
     }
     @include for-tablet-portrait-up {
-      font-size: 35px;
-      line-height: 35px;
+      font-size: 0.7em;
+      line-height: 1em;
     }
     @include for-phone-only {
-      font-size: 39px;
-      line-height: 50px;
+      font-size: 0.8em;
+      line-height: 1em;
     }
   }
 }
+

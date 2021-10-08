@@ -4,6 +4,8 @@
     margin-top: 60px;
     display: flex;
     justify-content: flex-end;
+    font-size: 25px;
+    line-height: 50px;
     @include for-tablet-portrait-up {
       margin-top: 30px;
     }
@@ -14,22 +16,26 @@
     a {
       font-style: normal;
       font-weight: 600;
-      font-size: 25px;
-      line-height: 50px;
+      font-size: 1em;
+      line-height: 2em;
       text-decoration: underline;
       color: #FFFFFF;
+      @include for-big-desktop-up {
+        font-size: calc(1em + 0.5vw);
+      }
       @include for-tablet-landscape-up {
-        font-size: 20px;
-        line-height: 20px;
+        font-size: 0.8em;
+        line-height: 1em;
       }
       @include for-tablet-portrait-up {
-        font-size: 20px;
-        line-height: 30px;
+        font-size: 0.8em;
+        line-height: 1em;
       }
       @include for-phone-only {
-        font-size: 20px;
-        line-height: 40px;
+        font-size: 0.8em;
+        line-height: 1em;
       }
     }
   }
 }
+

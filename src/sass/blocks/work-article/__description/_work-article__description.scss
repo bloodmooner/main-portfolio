@@ -1,23 +1,27 @@
 .work-article {
 
   &__description {
-
+    font-size: 50px;
+    line-height: 50px;
     p {
       margin-top: 40px;
       font-style: normal;
       font-weight: 300;
-      font-size: 20px;
-      line-height: 25px;
+      font-size: 0.4em;
+      line-height: 1em;
       text-align: justify;
       color: #FFFFFF;
+      @include for-big-desktop-up {
+        font-size: calc(0.4em + 0.5vw);
+      }
       @include for-tablet-portrait-up {
         margin-top: 30px;
-        font-size: 18px;
-        line-height: 23px;
+        font-size: 0.36em;
+        line-height: 1.5em;
       }
       @include for-phone-only {
-        font-size: 15px;
-        line-height: 23px;
+        font-size: 0.3em;
+        line-height: 1.5em;
       }
     }
     h3 {
@@ -26,24 +30,24 @@
       padding-bottom: 40px;
       font-style: normal;
       font-weight: 800;
-      font-size: 50px;
-      line-height: 50px;
+      font-size: 1em;
+      line-height: 1em;
       letter-spacing: -0.05em;
       color: #FFFFFF;
       @include for-tablet-landscape-up {
         margin-top: 60px;
-        font-size: 39px;
-        line-height: 39px;
+        font-size: 0.8em;
+        line-height: 1em;
       }
       @include for-tablet-portrait-up {
         margin-top: 60px;
-        font-size: 35px;
-        line-height: 35px;
+        font-size: 0.75em;
+        line-height: 1em;
       }
       @include for-phone-only {
         margin-top: 30px;
-        font-size: 39px;
-        line-height: 50px;
+        font-size: 0.75em;
+        line-height: 1em;
       }
       &:after {
         content: '';
