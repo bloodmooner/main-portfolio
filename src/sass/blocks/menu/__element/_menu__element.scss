@@ -12,13 +12,6 @@
     &_border-white {
       border-left: 1px solid rgba(255, 255, 255, 0.2);
     }
-    @include for-desktop-up {
-      font-size: 20px;
-    }
-    @include for-tablet-landscape-up {
-      font-size: 18px;
-      line-height: 18px;
-    }
     @include for-tablet-portrait-up {
       display: none;
     }
