@@ -1,24 +1,29 @@
 .heading {
   &__title {
     font-weight: 900;
-    font-size: 100px;
-    line-height: 100px;
+    font-size: 1em;
+    line-height: 1em;
     color: #FFFFFF;
     letter-spacing: -0.05em;
+    @include for-big-desktop-up {
+      font-size: calc(1em + 1.7vw);
+      line-height: 1em;
+    }
     @include for-desktop-up {
-      font-size: 60px;
+      font-size: 0.8em;
+      line-height: 1em;
     }
     @include for-tablet-landscape-up {
-      font-size: 66px;
-      line-height: 66px;
+      font-size: 0.6em;
+      line-height: 1em;
     }
     @include for-tablet-portrait-up {
-      font-size: 45px;
-      line-height: 55px;
+      font-size: 0.45em;
+      line-height: 1em;
     }
     @include for-phone-only {
-      font-size: 39px;
-      line-height: 60px;
+      font-size: 0.4em;
+      line-height: 1em;
     }
   }
 }
