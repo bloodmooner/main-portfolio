@@ -43,6 +43,7 @@
 @import 'blocks/controls/__select/controls__select';
 @import 'blocks/controls/__content/controls__content';
 @import 'blocks/controls/__word/controls__word';
+@import 'blocks/controls/__number/controls__number';
 
 @import 'blocks/bones/bones';
 @import 'blocks/bones/__container/bones__container';
@@ -174,6 +175,11 @@ h1, h2, h3, h4, h5, h6, p, label {
   max-width: 1800px;
   width: 100%;
   margin: 0 auto;
+  position: relative;
+  @include for-big-desktop-up {
+    max-width: inherit;
+    padding: 0 5%;
+  }
   @include for-desktop-up {
     padding: 0 30px;
   }
@@ -185,6 +191,9 @@ h1, h2, h3, h4, h5, h6, p, label {
   }
   @include for-phone-only {
     padding: 0 15px;
+  }
+  &_full-height {
+    height: 100%;
   }
 }
 
@@ -203,6 +212,9 @@ label {
 
 label span:first-of-type {
   font-size: 20px;
+  @include for-big-desktop-up {
+    font-size: calc(1em + 0.1vw);
+  }
   @include for-desktop-up {
     font-size: 14px;
   }
