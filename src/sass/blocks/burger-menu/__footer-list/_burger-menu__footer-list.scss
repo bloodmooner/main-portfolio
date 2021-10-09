@@ -1,5 +1,8 @@
 .burger-menu {
   &__footer-list {
     list-style-type: none;
+    @include burger-for-phone-only {
+      display: flex;
+    }
   }
 }

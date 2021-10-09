@@ -6,6 +6,12 @@
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     column-gap: 30px;
+    @include for-big-desktop-up {
+      padding: 35px 325px 35px 60px;
+    }
+    @include burger-for-phone-only {
+      padding: 20px 60px;
+    }
     @include for-phone-only {
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: 30px 30px;

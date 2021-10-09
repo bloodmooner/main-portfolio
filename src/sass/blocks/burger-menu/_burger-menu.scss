@@ -6,6 +6,12 @@
   background-color: #ffff;
   z-index: 100;
   transition: .5s all;
+  @include for-big-desktop-up {
+    width: 35%;
+  }
+  @include for-tablet-portrait-up {
+    width: 100%;
+  }
   @include for-phone-only {
     width: 100%;
   }

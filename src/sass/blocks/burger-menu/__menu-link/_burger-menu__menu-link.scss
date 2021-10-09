@@ -1,7 +1,14 @@
 .burger-menu {
   &__menu-link {
+    display: block;
+    width: 100%;
     color: rgba(0, 0, 0, 0.2);
-
+    @include for-big-desktop-up {
+      font-size: calc(1em + 1vh + 0.5vw);
+    }
+    @include burger-for-phone-only {
+      font-size: calc(0.5em + 1vw);
+    }
     &_underline {
       text-decoration: underline;
     }

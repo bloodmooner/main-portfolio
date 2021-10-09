@@ -13,6 +13,9 @@
       font-size: 20px;
       padding: 19px 60px;
     }
+    @include burger-for-phone-only {
+      padding: 10px 60px;
+    }
     @include for-phone-only {
       padding: 15px;
       font-size: 18px;
