@@ -16,7 +16,7 @@ burgerMenuClose.addEventListener('click', () => {
 });
  */
 
-const selectCategory = document.querySelector('.controls__item_category');
+/* const selectCategory = document.querySelector('.controls__item_category');
 const selectTriangle = selectCategory.querySelectorAll('.controls__triangle-line');
 const selectContainer = selectCategory.querySelector('.controls__select-container');
 
@@ -27,4 +27,17 @@ selectCategory.addEventListener('click', () => {
     triangle.classList.toggle('controls__triangle-line_down');
   });
   selectContainer.classList.toggle('controls__select-container_active')
-})
+}); */
+
+
+const reviewsItems = document.querySelectorAll('.comments__item');
+
+reviewsItems.forEach((item) => {
+  let reviewsButton = item.querySelector('.comments__button');
+  item.addEventListener('mouseover', () => {
+    reviewsButton.classList.add('comments__button_active');
+  });
+  item.addEventListener('mouseout', () => {
+    reviewsButton.classList.remove('comments__button_active');
+  });
+});

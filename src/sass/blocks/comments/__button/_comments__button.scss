@@ -10,6 +10,7 @@
     color: #FFFFFF;
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: 0.4s all;
     span {
       @include for-big-desktop-up {
         display: block;
@@ -25,6 +26,14 @@
         font-size: 1em;
       }
     }
+
+    &_active {
+      background-color: #FFFFFF;
+      span {
+        color: #000000;
+      }
+    }
+
     @include for-big-desktop-up {
       width: max-content;
       height: max-content;
