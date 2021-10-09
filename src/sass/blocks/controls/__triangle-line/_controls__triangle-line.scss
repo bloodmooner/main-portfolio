@@ -1,0 +1,27 @@
+.controls {
+  &__triangle-line {
+    position: absolute;
+    width: 9px;
+    height: 2px;
+    background-color: #FFFFFF;
+    transition: all 0.5s;
+    &:nth-child(1) {
+      left: 0px;
+      transform: rotate(-45deg);
+    }
+    &:nth-child(2) {
+      left: 5px;
+      transform: rotate(45deg);
+    }
+    &_down {
+      &:nth-child(1) {
+        left: 0px;
+        transform: rotate(45deg);
+      }
+      &:nth-child(2) {
+        left: 5px;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}

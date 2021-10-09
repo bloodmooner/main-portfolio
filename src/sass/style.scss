@@ -1,5 +1,6 @@
 @import 'libs/bootstrap-reboot.min';
 @import 'base/mixins';
+@import 'base/animations';
 
 @import 'libs/fonts';
 
@@ -32,6 +33,7 @@
 @import 'blocks/heading/__container/heading__container';
 @import 'blocks/heading/__title/heading__title';
 
+
 @import 'blocks/controls/controls';
 @import 'blocks/controls/__container/controls__container';
 @import 'blocks/controls/__item/controls__item';
@@ -44,6 +46,13 @@
 @import 'blocks/controls/__content/controls__content';
 @import 'blocks/controls/__word/controls__word';
 @import 'blocks/controls/__number/controls__number';
+
+@import 'blocks/controls/__select-container/controls__select-container';
+@import 'blocks/controls/__select-item/controls__select-item';
+@import 'blocks/controls/__select-link/controls__select-link';
+@import 'blocks/controls/__triangle/controls__triangle';
+@import 'blocks/controls/__triangle-line/controls__triangle-line';
+
 
 @import 'blocks/bones/bones';
 @import 'blocks/bones/__container/bones__container';
@@ -219,6 +228,7 @@ label span:first-of-type {
     font-size: 14px;
   }
 }
+
 
 
 

@@ -1,0 +1,15 @@
+.controls {
+  &__select-container {
+    display: none;
+    position: absolute;
+    bottom: -363px;
+    z-index: 100;
+    width: 100%;
+    background-color: #444444;
+    &_active {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-auto-rows: minmax(120px, auto);
+    }
+  }
+}
