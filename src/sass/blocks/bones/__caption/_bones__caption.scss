@@ -6,6 +6,7 @@
     font-size: 20px;
     line-height: 25px;
     color: #FFFFFF;
+    transition: 0.4s ease-in-out;
     @include for-big-desktop-up {
       margin: 10% 0 10% 0;
     }
@@ -39,6 +40,12 @@
       display: block;
       font-weight: 300;
       color: #000000;
+    }
+    &_main {
+      font-size: 20px;
+      @include for-phone-only {
+        margin-top: 15px;
+      }
     }
   }
 }

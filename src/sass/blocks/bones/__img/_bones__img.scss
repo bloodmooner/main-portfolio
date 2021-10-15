@@ -3,6 +3,14 @@
 
     &_right-indent {
       margin-right: 30px;
+      height: 213px;
+      @include for-big-desktop-up {
+        height: calc(213px + 4vw);
+      }
+      @include for-phone-only {
+        height: 170px;
+        margin-right: 20px;
+      }
     }
   }
 }

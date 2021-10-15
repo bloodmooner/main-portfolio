@@ -19,6 +19,15 @@
     &_active {
       color: #000000;
     }
+    &_more {
+
+      @include for-big-desktop-up {
+        margin-bottom: 5%;
+      }
+    }
+    &_mt15 {
+      margin-top: 15px;
+    }
   }
 }
 

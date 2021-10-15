@@ -7,3 +7,46 @@
     top: 0px;
   }
 }
+
+@keyframes showUp {
+
+  from {
+    top: 15%;
+    display: none;
+  }
+
+  to {
+    top:0;
+    display: block;
+  }
+
+}
+
+@keyframes hideDown {
+
+  from {
+    top: 0%;
+    display: block;
+
+  }
+
+  to {
+    top: 30%;
+    display: none;
+  }
+
+}
+
+@keyframes showRight {
+
+  from {
+    right: 70%;
+    display: none;
+  }
+
+  to {
+    right :0;
+    display: block;
+  }
+
+}

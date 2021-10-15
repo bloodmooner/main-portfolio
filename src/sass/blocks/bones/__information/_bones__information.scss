@@ -5,7 +5,6 @@
     font-size: 50px;
     &_two-column {
       display: flex;
-      justify-content: space-between;
       padding-bottom: 45px;
       &::after {
         content: '';
@@ -16,6 +15,12 @@
         height: 1px;
         background-color: rgba(0, 0, 0, 0.2);
       }
+      @include for-phone-only {
+        padding-bottom: 30px;
+      }
+    }
+    &_mb50 {
+      margin-bottom: 50px;
     }
   }
 }

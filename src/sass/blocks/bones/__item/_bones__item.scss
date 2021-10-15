@@ -6,6 +6,7 @@
     border-bottom: 1px solid #333333;
     font-size: 20px;
     line-height: 25px;
+    transition: 0.4s ease-in-out;
     @include for-big-desktop-up {
       padding: 5% 15% 5% 15%;
     }
@@ -35,6 +36,30 @@
       @include for-big-desktop-up {
         padding: 5% 15% 5% 15%;
       }
+    }
+
+    // Animations
+
+    &_animate-showup {
+      display: block;
+      animation: showUp 0.6s;
+    }
+    &_animate-hide-down {
+      display: none;
+      animation: hideDown 0.6s;
+    }
+
+    &_animate-show-right {
+      display: none;
+      animation: showRight 0.6s;
+    }
+
+
+    &_more {
+      position: relative;
+      display: none;
+      height: 100%;
+      z-index: 11;
     }
     @include for-desktop-up {
       padding: 40px 30px 40px 30px;

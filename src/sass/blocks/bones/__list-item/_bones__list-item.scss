@@ -1,0 +1,47 @@
+.bones {
+  &__list-item {
+    font-size: 1em;
+    line-height: 1em;
+    font-weight: 700;
+    color: #000000;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    &:nth-child(2) {
+      text-align: center;
+    }
+    &:nth-child(3) {
+      padding-left: 20px;
+      border-right: none;
+    }
+    &_gray {
+      color: #727272;
+    }
+    &_two-column {
+      display: flex;
+      align-items: center;
+      &:nth-child(1) {
+       padding-right: 20px;
+
+       @include for-phone-only {
+         border-right: none;
+         padding-right: 0;
+       }
+      }
+      &:nth-child(2) {
+        border-right: none;
+        margin-left: 20px;
+        @include for-phone-only {
+          margin-top: 5px;
+          margin-left: 0;
+        }
+      }
+
+    }
+    @include for-big-desktop-up {
+      font-size: calc(1em + 0.5vw);
+    }
+    @include for-phone-only {
+      font-size: 0.6em;
+    }
+
+  }
+}
