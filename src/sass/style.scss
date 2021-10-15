@@ -72,6 +72,14 @@
 @import 'blocks/bones/__description/bones__description';
 @import 'blocks/bones/__description-text/bones__description-text';
 
+@import 'blocks/bones/more/bones__more';
+@import 'blocks/bones/__item-container/bones__item-container';
+@import 'blocks/bones/__list/bones__list';
+@import 'blocks/bones/__list-item/bones__list-item';
+@import 'blocks/bones/__list-link/bones__list-link';
+@import 'blocks/bones/__list-divider/bones__list-divider';
+@import 'blocks/bones/__rating/bones__rating';
+
 
 @import 'blocks/work/work';
 @import 'blocks/work/__container/work__container';
@@ -141,6 +149,8 @@
 @import 'blocks/burger-menu/__footer-item/burger-menu__footer-item';
 @import 'blocks/burger-menu/__footer-link/burger-menu__footer-link';
 
+
+@import 'blocks/index-wrapper/index-wrapper';
 
 
 @import 'blocks/modal-bg/modal-bg';
@@ -229,6 +239,10 @@ label span:first-of-type {
   }
 }
 
+
+.overflov-hidden {
+  overflow-y: hidden;
+}
 
 
 

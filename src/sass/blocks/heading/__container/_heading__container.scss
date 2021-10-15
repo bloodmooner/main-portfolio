@@ -43,6 +43,24 @@
       top: 50%;
       transform: translateY(-50%);
       padding: 0;
+      @include for-tablet-landscape-up {
+        position: relative;
+        top: 0;
+        transform: translateY(0);
+        padding: 30px 0;
+      }
+      @include for-tablet-portrait-up {
+        position: relative;
+        top: 0;
+        transform: translateY(0);
+        padding: 30px 0;
+      }
+      @include for-phone-only {
+        position: relative;
+        top: 0;
+        transform: translateY(0);
+        padding: 30px 0;
+      }
     }
     &_vert-padding40 {
       padding: 40px 0;

@@ -130,6 +130,12 @@
     }
     &_active {
       background-color: #444444;
+      &-white {
+        background-color: #FFFFFF;
+        span {
+          color: #151515;
+        }
+      }
     }
     @include for-tablet-landscape-up {
       justify-content: center;
