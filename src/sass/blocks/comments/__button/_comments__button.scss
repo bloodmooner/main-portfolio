@@ -32,6 +32,9 @@
       span {
         color: #000000;
       }
+      &-mt20 {
+        margin-top: 20px;
+      }
     }
 
     @include for-big-desktop-up {

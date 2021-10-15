@@ -189,7 +189,7 @@
             <option>Все</option>
           </select>
         </div>
-        <div class="controls__item controls__item_centered controls__item_mobile4 controls__item_active">
+        <div class="controls__item controls__item_centered controls__item_mobile4 controls__item_active-white">
           <span class="controls__name controls__name_centered controls__name_active">
             Написать комментарий
           </span>
@@ -206,6 +206,32 @@
 
   <section class="comments">
     <div class="comments__container">
+
+      <div class="comments__item comments__item_active">
+        <form action="#" class="comments__form">
+          <div class="comments__info">
+            <img class="comments__photo" src="assets/svg/add-review.svg" alt="" >
+            <div class="comments__description">
+              <span class="comments__role">Гость</span>
+              <div class="comments__inputs">
+                <input type="text" class="comments__inputs-field" placeholder="Имя" name="comments_name">
+                <input type="text" class="comments__inputs-field" placeholder="Фамилия" name="comments_sername">
+              </div>
+            </div>
+          </div>
+          <div class="comments__separator">
+            <div class="rating comments__rating" style="--rating: 3;"></div>
+            <input type="number" hidden name="comments_rating">
+            <div class="comments__line"></div>
+          </div>
+          <div class="comments__text">
+            <textarea name="" id="" class="comments__textarea" placeholder="Ваш комментарий" name="comments_text"></textarea>
+          </div>
+          <button class="comments__button comments__button_active comments__button_active-mt20">
+            <span>Отправить</span>
+          </button>
+        </form>
+      </div>
 
       <div class="comments__item">
         <div class="comments__info">
