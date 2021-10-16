@@ -71,6 +71,7 @@
 @import 'blocks/bones/__img/bones__img';
 @import 'blocks/bones/__description/bones__description';
 @import 'blocks/bones/__description-text/bones__description-text';
+@import 'blocks/bones/__link/bones__link';
 
 @import 'blocks/bones/more/bones__more';
 @import 'blocks/bones/__item-container/bones__item-container';
@@ -244,6 +245,31 @@ label span:first-of-type {
   overflow-y: hidden;
 }
 
+
+
+
+
+/* .loading {
+  background-color: #fff;
+  z-index: 1000;
+
+  &_start {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    animation: loadingPage 1.3s;
+  }
+  &_done {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    animation: loadingPage 1.3s;
+  }
+} */
 
 
 
