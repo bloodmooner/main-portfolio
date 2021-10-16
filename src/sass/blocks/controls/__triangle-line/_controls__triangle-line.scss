@@ -12,6 +12,9 @@
     &:nth-child(2) {
       left: 5px;
       transform: rotate(45deg);
+      @include for-big-desktop-up {
+        left: 100%;
+      }
     }
     &_down {
       &:nth-child(1) {
@@ -21,7 +24,13 @@
       &:nth-child(2) {
         left: 5px;
         transform: rotate(-45deg);
+        @include for-big-desktop-up {
+          left: 100%;
+        }
       }
+    }
+    @include for-big-desktop-up {
+      width: calc(9px + 0.5vw);
     }
   }
 }

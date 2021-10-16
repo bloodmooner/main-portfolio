@@ -10,6 +10,9 @@
     font-size: 40px;
     line-height: 40px;
     letter-spacing: -0.05em;
+    @include for-tablet-landscape-up {
+      display: flex;
+    }
   }
 
   &__inputs-field {
@@ -23,6 +26,14 @@
     color: #FFFFFF;
     &::placeholder {
       color: #727272;
+    }
+    @include for-big-desktop-up {
+      font-size: calc(1em + .9vw);
+    }
+    @include for-tablet-landscape-up {
+      &:nth-child(2) {
+        margin-left: 30px;
+      }
     }
   }
 

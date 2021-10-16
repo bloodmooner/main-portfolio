@@ -4,6 +4,9 @@
     font-size: 1em;
     line-height: 1em;
     color: #FFFFFF;
+    @include for-big-desktop-up {
+      font-size: calc(1em + 0.5vw);
+    }
     @include for-phone-only {
       margin: 10px 0 0 0;
     }

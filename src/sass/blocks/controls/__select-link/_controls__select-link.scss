@@ -6,5 +6,8 @@
     &:hover {
       color: #FFFFFF;
     }
+    @include for-big-desktop-up {
+      font-size: calc(1em + 0.5vw);
+    }
   }
 }

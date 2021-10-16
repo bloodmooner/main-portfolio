@@ -88,7 +88,9 @@
       }
     }
 
-
+    &_slide-container {
+      cursor: pointer;
+    }
 
 
     &_centered {
@@ -142,7 +144,7 @@
     }
 
 
-    &_category, &_tag {
+    &_category, &_tag, &_write-comment {
       cursor: pointer;
     }
 

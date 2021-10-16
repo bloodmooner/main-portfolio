@@ -22,5 +22,13 @@
     &_active {
       background-color: #272727;
     }
+    &_new {
+      &-display {
+        display: block;
+      }
+      &-nodisplay {
+        display: none;
+      }
+    }
   }
 }
