@@ -50,3 +50,49 @@
   }
 
 }
+
+
+@keyframes loadingPage {
+
+  from {
+    height: 0;
+  }
+
+  to {
+    height: 100%;
+  }
+
+}
+
+
+@keyframes hideDownTab {
+
+  from {
+    margin-top: 0;
+    opacity: 1;
+
+  }
+
+  to {
+    margin-top: 30%;
+    opacity: 0;
+  }
+
+}
+
+
+@keyframes showUpTab {
+
+  from {
+    margin-top: 30%;
+    opacity: 0;
+
+  }
+
+  to {
+    margin-top: 0;
+    opacity: 1;
+  }
+
+}
+

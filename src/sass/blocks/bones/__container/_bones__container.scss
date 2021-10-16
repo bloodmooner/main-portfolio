@@ -19,6 +19,10 @@
       grid-auto-rows: auto;
     }
     &_works {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
       grid-auto-rows: 640px;
       @include for-big-desktop-up {
         grid-template-columns: repeat(4, 1fr);
@@ -38,6 +42,12 @@
       @include for-phone-only {
         grid-template-columns: 1fr;
         grid-auto-rows: minmax(320px, auto);
+      }
+      &_hideDownTab {
+        animation: hideDownTab 1s;
+      }
+      &_showUpTab {
+        animation: showUpTab 1s;
       }
     }
     &_prices {
