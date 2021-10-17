@@ -254,3 +254,76 @@ sliderButtons.forEach((sliderButton, index) => {
 }
 
 
+
+
+/* var tabs = $('.tabs');
+var selector = $('.tabs').find('a').length;
+//var selector = $(".tabs").find(".selector");
+var activeItem = tabs.find('.active');
+var activeWidth = activeItem.innerWidth();
+$(".selector").css({
+  "left": activeItem.position.left + "px",
+  "width": activeWidth + "px"
+});
+
+$(".tabs").on("mouseover","a",function(e){
+  e.preventDefault();
+  $('.tabs a').removeClass("active");
+  $(this).addClass('active');
+  var activeWidth = $(this).innerWidth();
+  var itemPos = $(this).position();
+  $(".selector").css({
+    "left":itemPos.left + "px",
+    "width": activeWidth + "px"
+  });
+});
+
+
+$(document).ready(function() {
+  $( "a.menu__links" ).each(function(elem, index) {
+
+    if($( this ).hasClass( "active" ) == true) {
+      $(".selector").css({
+        "left": (tabs.width() / 6) * elem + "px",
+        "width": activeWidth + "px"
+      });
+    }
+  });
+}); */
+
+
+
+var tabs = $('.menu__list');
+var selector = $('.menu__list').find('a').length;
+//var selector = $(".tabs").find(".selector");
+var activeItem = tabs.find('.active');
+var activeWidth = activeItem.innerWidth();
+$(".menu__selector").css({
+  "left": activeItem.position.left + "px",
+  "width": activeWidth + "px"
+});
+
+$(".menu__list").on("mouseover","a",function(e){
+  e.preventDefault();
+  $('.menu__list a').removeClass("active");
+  $(this).addClass('active');
+  var activeWidth = $(this).innerWidth();
+  var itemPos = $(this).position();
+  $(".menu__selector").css({
+    "left":itemPos.left + "px",
+    "width": activeWidth + "px"
+  });
+});
+
+
+$(document).ready(function() {
+  $( "a.menu__links" ).each(function(elem, index) {
+
+    if($( this ).hasClass( "active" ) == true) {
+      $(".menu__selector").css({
+        "left": (tabs.width() / 6) * elem + "px",
+        "width": activeWidth + "px"
+      });
+    }
+  });
+});
