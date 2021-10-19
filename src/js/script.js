@@ -1,6 +1,6 @@
 'use strict';
 
-let burgerElem = document.querySelector('.burger');
+let burgerElem = document.querySelector('.burger-nav');
 let burgerMenuClose = document.querySelector('.burger-menu__close');
 let burgerMenu = document.querySelector('.burger-menu');
 let modalBG = document.querySelector('.modal-bg');

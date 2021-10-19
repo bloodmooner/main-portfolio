@@ -21,3 +21,16 @@
     }
   }
 }
+
+
+.menu {
+  &__links {
+    @include for-phone-only {
+      display: none;
+    }
+    &_display {
+      display: block;
+    }
+  }
+}
+

@@ -1,4 +1,7 @@
 .header {
   position: relative;
+  @include for-tablet-portrait-up {
+    height: 100px;
+  }
 }
 

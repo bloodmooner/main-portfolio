@@ -1,17 +1,4 @@
-.menu {
-  &__list {
-    list-style-type: none;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    height: 100%;
-    @include for-tablet-portrait-up {
-      grid-template-columns: 100px;
-    }
-    @include for-phone-only {
-      grid-template-columns: 100px;
-    }
-  }
-}
+
 
 .menu {
   &__list {
@@ -25,7 +12,16 @@
     list-style:none;
     box-shadow:0px 5px 20px rgba(0,0,0,0.1);
     position:relative;
-    a {
+    @include for-tablet-portrait-up {
+      grid-template-rows: 100px;
+    }
+    @include for-phone-only {
+      grid-template-rows: 100px;
+      grid-template-columns: 1fr;
+      display: flex;
+      justify-content: end;
+    }
+    .menu__links {
       font-weight: 800;
       display: flex;
       justify-content: center;
@@ -37,6 +33,27 @@
       z-index:1;
       transition-duration:0.6s;
       border-left: 1px solid #333333;
+      @include for-big-desktop-up {
+        font-size: calc(1em + 0.9vw);
+      }
+      @include for-desktop-up {
+        font-size: 0.8em;
+      }
+      @include for-tablet-landscape-up {
+        font-size: 0.75em;
+      }
+      @include for-tablet-portrait-up {
+        font-size: 0.6em;
+      }
+      @include for-phone-only {
+        display: none;
+      }
+      &_display {
+        @include for-phone-only {
+          display: block;
+          padding: 0 15px;
+        }
+      }
       &.active {
         color:#000000;
       }
@@ -50,10 +67,12 @@
       z-index:1;
       transition-duration:0.6s;
       background: #FFFFFF;
+      @include for-phone-only {
+        display: none;
+      }
     }
-    &_display {
-      display: block;
-    }
+
   }
 }
+
 

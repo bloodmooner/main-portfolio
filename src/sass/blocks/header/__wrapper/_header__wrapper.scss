@@ -22,6 +22,7 @@
     @include for-tablet-portrait-up {
       display: flex;
       justify-content: space-between;
+      height: 100%;
     }
     @include for-phone-only {
       display: flex;
