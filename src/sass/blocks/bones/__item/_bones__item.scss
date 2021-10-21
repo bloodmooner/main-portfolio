@@ -2,8 +2,8 @@
   &__item {
     position: relative;
     padding: 40px 60px 60px 60px;
-    border-right: 1px solid #333333;
-    border-bottom: 1px solid #333333;
+    /* border-right: 1px solid #333333;
+    border-bottom: 1px solid #333333; */
     font-size: 20px;
     line-height: 25px;
     transition: 0.4s ease-in-out;
@@ -11,8 +11,68 @@
       padding: 5% 15% 5% 15%;
     }
     &_border-white {
-      border-right: 1px solid rgba(255, 255, 255, 0.2);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      &::before {
+        /* content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 1px;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.2);;
+        animation: growElem 3s; */
+      }
+
+    }
+    &_oneline {
+      &:nth-child(1), &:nth-child(2) {
+        &::after {
+          content: '';
+          position: absolute;
+          right: 0;
+          top: 0;
+          width: 1px;
+          height: 100%;
+          background-color: rgba(255, 255, 255, 0.2);;
+          animation: growElem 3s;
+        }
+        @include for-tablet-landscape-up {
+          &::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 1px;
+            background-color: rgba(255, 255, 255, 0.2);;
+            animation: growElem 3s;
+          }
+        }
+        @include for-tablet-portrait-up {
+          &::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 1px;
+            background-color: rgba(255, 255, 255, 0.2);;
+            animation: growElem 3s;
+          }
+        }
+        @include for-phone-only {
+          &::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 1px;
+            background-color: rgba(255, 255, 255, 0.2);;
+            animation: growElem 3s;
+          }
+        }
+
+      }
     }
     &_cover {
       background-size: cover;

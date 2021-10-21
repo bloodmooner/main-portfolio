@@ -3,6 +3,9 @@
     position: relative;
     z-index: 10;
     font-size: 50px;
+    &_animated {
+      animation: raiseUp5percent 4s;
+    }
     &_two-column {
       display: flex;
       padding-bottom: 45px;

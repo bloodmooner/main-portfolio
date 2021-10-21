@@ -1,6 +1,52 @@
 .heading {
-  border-bottom: 1px solid #444444;
+  /* border-bottom: 1px solid #444444; */
+  position: relative;
   &_border-white {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+  }
+  &_animated {
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: rgba(255, 255, 255, 0.2);;
+      animation: growElem 3s;
+    }
+    @include for-tablet-landscape-up {
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: transparent;
+      }
+    }
+    @include for-tablet-portrait-up {
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: transparent;
+      }
+    }
+    @include for-phone-only {
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: transparent;
+      }
+    }
   }
 }

@@ -24,6 +24,8 @@
   <meta property="twitter:description" content="Portfolio - Sergey Goncharuk description">
   <meta property="twitter:image" content="https://www.discoverwalks.com/blog/wp-content/uploads/2016/07/louvre-big.jpg">
 
+
+
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="overflov-hidden">
@@ -38,39 +40,29 @@
             <span class="logo__text">Сергей</span>
           </div>
         </div>
-        <nav class="menu">
-          <ul class="menu__list">
-            <li class="menu__element menu__element_border-white">
-              <a class="menu__link loading__link" href="#">Главная</a>
-            </li>
-            <li class="menu__element menu__element_border-white">
-              <a class="menu__link loading__link" href="#">Работы</a>
-            </li>
-            <li class="menu__element menu__element_border-white">
-              <a class="menu__link loading__link" href="prices.html">Цены</a>
-            </li>
-            <li class="menu__element menu__element_border-white menu__element_active">
-              <a class="menu__link loading__link menu__link_active" href="#">Блог</a>
-            </li>
-            <li class="menu__element menu__element_border-white">
-              <a class="menu__link loading__link" href="#">Заказать</a>
-            </li>
-            <li class="menu__element menu__element_border-white menu__element_display">
-              <div class="burger">
-                <div class="burger__container">
-                  <div class="burger__line"></div>
-                  <div class="burger__line"></div>
-                </div>
+        <nav class="menu__list">
+          <div class="menu__selector"></div>
+          <a href="#" class="menu__links menu__links_border-white active"><i class="fab fa-superpowers"></i>Главная</a>
+          <a href="#" class="menu__links menu__links_border-white"><i class="fas fa-hand-rock"></i>Работы</a>
+          <a href="#" class="menu__links menu__links_border-white"><i class="fas fa-hand-rock"></i>Цены</a>
+          <a href="#" class="menu__links menu__links_border-white"><i class="fas fa-hand-rock"></i>Блог</a>
+          <a href="#" class="menu__links menu__links_border-white"><i class="fas fa-hand-rock"></i>Заказать</a>
+          <a href="#" class="menu__links menu__links_border-white burger-nav menu__links_display">
+            <div class="burger">
+              <div class="burger__container">
+                <div class="burger__line"></div>
+                <div class="burger__line"></div>
               </div>
-            </li>
-          </ul>
+            </div>
+          </a>
         </nav>
       </div>
     </header>
 
 
 
-    <section class="heading heading_border-white">
+
+    <section class="heading heading_border-white heading_animated">
       <div class="container container_full-height">
         <div class="heading__container heading__container_full-height">
           <h1 class="heading__title">
@@ -83,8 +75,8 @@
 
     <section class="bones">
       <div class="bones__container bones__container_full-height">
-        <div class="bones__item bones__item_main bones__item_border-white bones__item_prices">
-          <div class="bones__information">
+        <div class="bones__item bones__item_main bones__item_border-white bones__item_prices bones__item_oneline">
+          <div class="bones__information bones__information_animated">
             <h3 class="bones__subtitle">Обо мне</h3>
             <h2 class="bones__title">Я Сергей Гончарук, крутой программист</h2>
           </div>
@@ -94,8 +86,8 @@
             </span>
           </button>
         </div>
-        <div class="bones__item bones__item_main bones__item_border-white bones__item_prices">
-          <div class="bones__information">
+        <div class="bones__item bones__item_main bones__item_border-white bones__item_prices bones__item_oneline">
+          <div class="bones__information bones__information_animated">
             <h3 class="bones__subtitle">Опыт</h3>
             <h2 class="bones__title">Уже 15 лет я активно занимаюсь в IT</h2>
           </div>
@@ -105,8 +97,8 @@
             </span>
           </button>
         </div>
-        <div class="bones__item bones__item_main bones__item_border-white bones__item_prices">
-          <div class="bones__information">
+        <div class="bones__item bones__item_main bones__item_border-white bones__item_prices bones__item_oneline">
+          <div class="bones__information bones__information_animated">
             <h3 class="bones__subtitle">Навыки</h3>
             <h2 class="bones__title">Сделаю все, что вы захотите воплотить</h2>
           </div>
@@ -267,14 +259,15 @@
 
 
     <div class="header__background-black">
-      <div class="header__background-img" style="background-image: url('assets/img/prices0-1920x1080.jpg')"></div>
+      <div class="header__background-img heading__title" style="background-image: url('assets/img/prices0-1920x1080.jpg')"></div>
     </div>
 </div>
 
   <div class="loading"></div>
 
+  <div class="modal-bg"></div>
 
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>

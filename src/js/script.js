@@ -203,54 +203,54 @@ if(writeCommentBtn) {
 
 // Tabs on works.hmtl
 
-const sliderButtons = document.querySelectorAll('.controls__item_slide-container');
+let sliderButtons = document.querySelectorAll('.controls__item_slide-container');
 
-if(sliderButtons) {
+if(sliderButtons.length != 0) {
   const sliderButtonsName = document.querySelectorAll('.controls__item_slide-name');
-const worksTabs = document.querySelectorAll('.bones__container_works');
-const worksCountElement = document.querySelector('.controls__number');
+  const worksTabs = document.querySelectorAll('.bones__container_works');
+  const worksCountElement = document.querySelector('.controls__number');
 
-let worksItemsCount = 0;
+  let worksItemsCount = 0;
 
-worksTabs[0].style.opacity = '0';
-worksTabs[1].style.opacity = '1';
-worksCountElement.textContent = worksTabs[1].querySelectorAll('.bones__item_work').length;
-
-
+  worksTabs[0].style.opacity = '0';
+  worksTabs[1].style.opacity = '1';
+  worksCountElement.textContent = worksTabs[1].querySelectorAll('.bones__item_work').length;
 
 
 
-sliderButtons.forEach((sliderButton, index) => {
-  sliderButton.addEventListener('click', (e) => {
-    for(let i = 0; i < sliderButtons.length; i++) {
-      if(i == index) {
-        worksItemsCount = worksTabs[index].querySelectorAll('.bones__item_work').length;
-        worksCountElement.textContent = worksItemsCount;
-
-        sliderButtons[i].classList.add('controls__item_active');
-
-        worksTabs[i].style.opacity = '1';
-        worksTabs[i].classList.add('bones__container_works_showUpTab');
-        worksTabs[i].classList.add('bones__container_works_hideDownTab');
-
-        // For fix opacity behaviour
-        worksTabs[i].style.display = 'grid';
-
-      } else {
-        sliderButtons[i].classList.remove('controls__item_active');
-
-        worksTabs[i].style.opacity = '0';
 
 
-        worksTabs[i].classList.remove('bones__container_works_showUpTab');
-        worksTabs[i].classList.add('bones__container_works_hideDownTab');
+  sliderButtons.forEach((sliderButton, index) => {
+    sliderButton.addEventListener('click', (e) => {
+      for(let i = 0; i < sliderButtons.length; i++) {
+        if(i == index) {
+          worksItemsCount = worksTabs[index].querySelectorAll('.bones__item_work').length;
+          worksCountElement.textContent = worksItemsCount;
 
-        // For fix opacity behaviour
-        worksTabs[i].style.display = 'none';
+          sliderButtons[i].classList.add('controls__item_active');
+
+          worksTabs[i].style.opacity = '1';
+          worksTabs[i].classList.add('bones__container_works_showUpTab');
+          worksTabs[i].classList.add('bones__container_works_hideDownTab');
+
+          // For fix opacity behaviour
+          worksTabs[i].style.display = 'grid';
+
+        } else {
+          sliderButtons[i].classList.remove('controls__item_active');
+
+          worksTabs[i].style.opacity = '0';
+
+
+          worksTabs[i].classList.remove('bones__container_works_showUpTab');
+          worksTabs[i].classList.add('bones__container_works_hideDownTab');
+
+          // For fix opacity behaviour
+          worksTabs[i].style.display = 'none';
+        }
       }
-    }
+    });
   });
-});
 }
 
 

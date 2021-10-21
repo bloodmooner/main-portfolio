@@ -72,6 +72,7 @@
     }
     &_show-card {
       z-index: 100;
+      animation: raiseUp5percent 3s;
     }
   }
 }
