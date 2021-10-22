@@ -23,6 +23,18 @@
       }
 
     }
+    &_border-gray {
+      border-right: 1px solid #333333;
+      border-bottom: 1px solid #333333;
+      &:nth-child(3n) {
+        border-right: none;
+      }
+      @include for-tablet-landscape-up {
+        &:nth-child(3n) {
+          border-right: 1px solid #333333;
+        }
+      }
+    }
     &_oneline {
       &:nth-child(1), &:nth-child(2) {
         &::after {

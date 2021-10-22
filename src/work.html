@@ -32,44 +32,34 @@
 
 
   <header class="header">
-    <div class="header__wrapper header__wrapper_border-white">
+
+    <div class="header__wrapper header__wrapper_border-gray">
       <div class="logo">
         <div class="logo__wrapper">
           <div class="logo__icon"></div>
           <span class="logo__text">Сергей</span>
         </div>
       </div>
-      <nav class="menu">
-        <ul class="menu__list">
-          <li class="menu__element menu__element_border-white">
-            <a class="menu__link" href="#">Главная</a>
-          </li>
-          <li class="menu__element menu__element_border-white">
-            <a class="menu__link" href="#">Работы</a>
-          </li>
-          <li class="menu__element menu__element_border-white">
-            <a class="menu__link" href="#">Цены</a>
-          </li>
-          <li class="menu__element menu__element_border-white menu__element_active">
-            <a class="menu__link menu__link_active" href="#">Блог</a>
-          </li>
-          <li class="menu__element menu__element_border-white">
-            <a class="menu__link" href="#">Заказать</a>
-          </li>
-          <li class="menu__element menu__element_display menu__element_border-white">
-            <div class="burger">
-              <div class="burger__container">
-                <div class="burger__line"></div>
-                <div class="burger__line"></div>
-              </div>
+      <nav class="menu__list">
+        <div class="menu__selector"></div>
+        <a href="#" class="menu__links menu__links_border-white"><i class="fab fa-superpowers"></i>Главная</a>
+        <a href="#" class="menu__links menu__links_border-white active"><i class="fas fa-hand-rock"></i>Работы</a>
+        <a href="#" class="menu__links menu__links_border-white"><i class="fas fa-hand-rock"></i>Цены</a>
+        <a href="#" class="menu__links menu__links_border-white"><i class="fas fa-hand-rock"></i>Блог</a>
+        <a href="#" class="menu__links menu__links_border-white"><i class="fas fa-hand-rock"></i>Заказать</a>
+        <a href="#" class="menu__links menu__links_border-white burger-nav menu__links_display">
+          <div class="burger">
+            <div class="burger__container">
+              <div class="burger__line"></div>
+              <div class="burger__line"></div>
             </div>
-          </li>
-        </ul>
+          </div>
+        </a>
       </nav>
     </div>
 
 
-    <section class="heading">
+    <section class="heading heading_border-gray">
       <div class="container">
         <div class="heading__container heading__container_responsive heading__container_vert-padding40">
           <h1 class="heading__title">
@@ -162,7 +152,7 @@
 </main>
 
 
-    <section class="heading">
+<section class="heading heading_border-gray">
       <div class="container">
         <div class="heading__container heading__container_comments">
           <h2 class="heading__title">
@@ -180,14 +170,33 @@
           <div class="controls__icon controls__icon_filter"></div>
           <span class="controls__text">Фильтр</span>
         </div>
-        <div class="controls__item controls__item_centered">
+        <div class="controls__item controls__item_category controls__item_centered">
           <span class="controls__name">
             Показывать:
           </span>
-          <select class="controls__select">
-            <option>Последние</option>
-            <option>Все</option>
-          </select>
+          <span class="controls__select">Последние
+            <div class="controls__triangle">
+              <div class="controls__triangle-line"></div>
+              <div class="controls__triangle-line"></div>
+            </div>
+          </span>
+          <div class="controls__select-container">
+            <div class="controls__select-item">
+              <a class="controls__select-link" href="#">
+                Последние
+              </a>
+            </div>
+            <div class="controls__select-item">
+              <a class="controls__select-link" href="#">
+                Все
+              </a>
+            </div>
+            <div class="controls__select-item">
+              <a class="controls__select-link" href="#">
+                Программирование
+              </a>
+            </div>
+          </div>
         </div>
         <div class="controls__item controls__item_write-comment controls__item_centered controls__item_mobile4">
           <span class="controls__name controls__name_centered controls__name_active">
@@ -233,7 +242,7 @@
         </form>
       </div>
 
-      <div class="comments__item">
+      <div class="comments__item comments__item_border-gray">
         <div class="comments__info">
           <img class="comments__photo" src="assets/img/comment1.jpg" alt="" >
           <div class="comments__description">
@@ -252,7 +261,7 @@
         </div>
       </div>
 
-      <div class="comments__item">
+      <div class="comments__item comments__item_border-gray">
         <div class="comments__info">
           <img class="comments__photo" src="assets/img/comment2.jpg" alt="" >
           <div class="comments__description">
@@ -271,7 +280,7 @@
         </div>
       </div>
 
-      <div class="comments__item">
+      <div class="comments__item comments__item_border-gray">
         <div class="comments__info">
           <img class="comments__photo" src="assets/img/comment3.jpg" alt="" >
           <div class="comments__description">
@@ -294,6 +303,7 @@
     </div>
   </section>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>

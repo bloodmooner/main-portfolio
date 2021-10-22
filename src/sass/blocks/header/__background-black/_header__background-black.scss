@@ -9,7 +9,9 @@
     background: #151515;
     opacity: 0.5;
     filter: blur(5px);
-    animation: fadeIn05 6s;
+    &_animated {
+      animation: fadeIn05 6s;
+    }
     @include for-tablet-portrait-up {
       display: none;
     }

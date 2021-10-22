@@ -5,7 +5,9 @@
     line-height: 1em;
     color: #FFFFFF;
     letter-spacing: -0.05em;
-    animation: raiseUp5percent 4s;
+    &_animated {
+      animation: raiseUp5percent 4s;
+    }
     @include for-big-desktop-up {
       font-size: calc(1em + 1.7vw);
       line-height: 1em;

@@ -37,6 +37,21 @@ if(selectCategory) {
   });
 }
 
+let selectTag = document.querySelector('.controls__item_tag');
+
+if(selectTag) {
+  let selectTriangle = selectTag.querySelectorAll('.controls__triangle-line');
+  let selectContainer = selectTag.querySelector('.controls__select-container');
+
+  selectTag.addEventListener('click', () => {
+    selectTag.classList.toggle('controls__item_active');
+    selectTriangle.forEach((triangle) => {
+      triangle.classList.toggle('controls__triangle-line_down');
+    });
+    selectContainer.classList.toggle('controls__select-container_active')
+  });
+}
+
 
 
 let reviewsItems = document.querySelectorAll('.comments__item');

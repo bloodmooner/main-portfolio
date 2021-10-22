@@ -55,7 +55,7 @@
           padding: 0 15px;
         }
       }
-      &_border-white {
+      &_animated {
         &::before {
           content: '';
           position: absolute;
@@ -66,6 +66,17 @@
           background-color: rgba(255, 255, 255, 0.2);;
           animation: growElem 2s;
           //animation-delay: 1s;
+        }
+      }
+      &_border-white {
+        &::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 1px;
+          height: 100%;
+          background-color: rgba(255, 255, 255, 0.2);;
         }
       }
       &.active {

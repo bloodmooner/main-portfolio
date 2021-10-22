@@ -1,8 +1,10 @@
 .header {
   position: relative;
-  animation: fadeIn 1.5s;
   @include for-tablet-portrait-up {
     height: 100px;
+  }
+  &_animated {
+    animation: fadeIn 1.5s;
   }
 }
 

@@ -1,4 +1,6 @@
 .bones {
   position: relative;
-  animation: fadeIn 2s;
+  &_animated {
+    animation: fadeIn 2s;
+  }
 }
