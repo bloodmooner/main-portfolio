@@ -70,90 +70,96 @@
 
 
     <section class="bones">
-      <div class="bones__container">
-        <div class="bones__item bones__item_border-gray order__item">
+      <form class="order-form" action="#">
+        <div class="bones__container">
+          <div class="bones__item bones__item_border-gray order__item">
 
-          <h3 class="bones__subtitle order__subtitle">Личные данные</h3>
-          <div class="order__inputs">
+            <h3 class="bones__subtitle order__subtitle">Личные данные</h3>
+            <div class="order__inputs">
+              <div class="order__input-container">
+                <input type="text" class="bones__input order__input" name="order-name" placeholder="Ваше имя">
+                <div class="order__validate"></div>
+              </div>
+              <div class="order__input-container">
+                <input type="text" class="bones__input order__input" name="order-mail" placeholder="Почта">
+                <div class="order__validate"></div>
+              </div>
+            </div>
+
+            <h3 class="bones__subtitle order__subtitle">Для кого сайт?</h3>
             <div class="order__input-container">
-              <input type="text" class="bones__input order__input" placeholder="Ваше имя">
+              <input type="text" class="bones__input order__input" name="order-about" placeholder="О компании">
               <div class="order__validate"></div>
             </div>
-            <div class="order__input-container">
-              <input type="text" class="bones__input order__input" placeholder="Почта">
-              <div class="order__validate"></div>
-            </div>
+
           </div>
 
-          <h3 class="bones__subtitle order__subtitle">Для кого сайт?</h3>
-          <div class="order__input-container">
-            <input type="text" class="bones__input order__input" placeholder="О компании">
-            <div class="order__validate"></div>
+          <div class="bones__item bones__item_border-gray order__item">
+
+            <h3 class="bones__subtitle order__subtitle">О сайте</h3>
+            <div class="order__inputs">
+              <div class="order__input-container">
+                <input type="text" class="bones__input order__input" name="order-site" placeholder="Сайт должен..">
+                <div class="order__validate"></div>
+              </div>
+            </div>
+
+            <h3 class="bones__subtitle order__subtitle order__subtitle_plan">План</h3>
+            <div class="order__input-container">
+
+              <div class="order__plan">
+                <label>
+                    <input class="order__radio" type="radio" checked name="order-plan" value="1st"/>
+                    <span class="order__radio-text">С нуля</span>
+                    <input class="order__radio-price" type="text" value="15 000" hidden>
+                </label>
+                <label>
+                    <input class="order__radio" type="radio" name="order-plan" value="2nd"/>
+                    <span class="order__radio-text">Сборка сайта</span>
+                    <input class="order__radio-price" type="text" value="10 000" hidden>
+                </label>
+                <label>
+                    <input class="order__radio" type="radio" name="order-plan" value="3rd"/>
+                    <span class="order__radio-text">Другое</span>
+                    <input class="order__radio-price" type="text" value="20 000" hidden>
+                </label>
+              </div>
+
+              <span class="order__price">15 000</span> <span class="order__price-symbol"> ₽</span>
+            </div>
+
           </div>
+
+          <div class="bones__item bones__item_border-gray order__item">
+
+            <h3 class="bones__subtitle order__subtitle">Дополнительно</h3>
+            <div class="order__inputs order__inputs_single">
+              <div class="order__input-container">
+                <input type="text" class="bones__input order__input" name="order-comment" placeholder="Комментарий">
+                <div class="order__validate"></div>
+              </div>
+            </div>
+
+            <div class="order__input-container">
+              <a class="order__link order__link_underline" href="#" >Скачать бриф</a>
+              <a class="order__link" href="#" >Прикрепить бриф</a>
+            </div>
+
+            <div class="order__input-container order__input-container_right-side">
+              <button class="order__button">
+                Отправить
+              </button>
+            </div>
+
+
+
+          </div>
+
 
         </div>
-
-        <div class="bones__item bones__item_border-gray order__item">
-
-          <h3 class="bones__subtitle order__subtitle">О сайте</h3>
-          <div class="order__inputs">
-            <div class="order__input-container">
-              <input type="text" class="bones__input order__input" placeholder="Сайт должен..">
-              <div class="order__validate"></div>
-            </div>
-          </div>
-
-          <h3 class="bones__subtitle order__subtitle order__subtitle_plan">План</h3>
-          <div class="order__input-container">
-
-            <div class="order__plan">
-              <label>
-                  <input class="order__radio" type="radio" checked name="options"/>
-                  <span class="order__radio-text">С нуля</span>
-              </label>
-              <label>
-                  <input class="order__radio" type="radio" name="options"/>
-                  <span class="order__radio-text">Сборка сайта</span>
-              </label>
-              <label>
-                  <input class="order__radio" type="radio" name="options"/>
-                  <span class="order__radio-text">Другое</span>
-              </label>
-            </div>
-
-            <span class="order__price">15 000 ₽</span>
-          </div>
-
-        </div>
-
-        <div class="bones__item bones__item_border-gray order__item">
-
-          <h3 class="bones__subtitle order__subtitle">Дополнительно</h3>
-          <div class="order__inputs order__inputs_single">
-            <div class="order__input-container">
-              <input type="text" class="bones__input order__input" placeholder="Комментарий">
-              <div class="order__validate"></div>
-            </div>
-          </div>
-
-          <div class="order__input-container">
-            <a class="order__link order__link_underline" href="#" >Скачать бриф</a>
-            <a class="order__link" href="#" >Прикрепить бриф</a>
-          </div>
-
-          <div class="order__input-container order__input-container_right-side">
-            <button class="order__button">
-              Отправить
-            </button>
-          </div>
-
-
-
-        </div>
-
-
-      </div>
+      </form>
     </section>
+
 
   </main>
 

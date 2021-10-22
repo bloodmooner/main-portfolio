@@ -342,3 +342,39 @@ $(document).ready(function() {
     }
   });
 });
+
+
+
+/* const workArticle = document.querySelector('.work-article');
+
+const paragraphContainer = document.querySelector('.work-article__description');
+const paragraphImagesContainer = document.querySelector('.work-information__images');
+
+const paragrapList = paragraphContainer.querySelectorAll('.work-article__image-lode');
+const paragraphImagesList = paragraphImagesContainer.querySelectorAll('img');
+
+
+console.log(paragraphImagesList);
+
+paragrapList.forEach((paragraph) => {
+  console.log(paragraph.offsetTop);
+}) */
+
+
+const orderTabs = document.querySelectorAll('.order__radio');
+
+if(orderTabs) {
+  const orderPrices = document.querySelectorAll('.order__radio-price');
+  const orderPriceElem = document.querySelector('.order__price');
+
+
+  orderTabs.forEach((orderTab, index) => {
+    orderTab.addEventListener('click', () => {
+      orderPriceElem.textContent = orderPrices[index].value;
+    });
+  });
+}
+
+
+
+
