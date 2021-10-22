@@ -1,0 +1,11 @@
+.work-information {
+  &__images {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    img {
+      margin-top: 250px;
+    }
+  }
+}
