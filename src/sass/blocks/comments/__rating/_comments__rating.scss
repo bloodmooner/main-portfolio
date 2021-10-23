@@ -1,7 +1,15 @@
 .comments {
-  &__rating {
-    @include for-tablet-landscape-up {
+  &__rating-container {
+    /* @include for-tablet-landscape-up {
       font-size: 25px;
+    } */
+    display: flex;
+  }
+  &__rating-item {
+    margin-left: 5px;
+    fill: #727272;
+    &_active {
+      fill: #FFFFFF;
     }
   }
 }

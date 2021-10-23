@@ -11,7 +11,7 @@
     -webkit-text-fill-color: transparent;
   }
   @include for-big-desktop-up {
-    font-size: calc(17px + 0.5vw);
+    font-size: calc(17px + 0.7vw);
   }
   @include for-desktop-up {
     font-size: 17px;

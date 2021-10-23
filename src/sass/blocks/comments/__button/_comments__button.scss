@@ -27,15 +27,7 @@
       }
     }
 
-    &_active {
-      background-color: #FFFFFF;
-      span {
-        color: #000000;
-      }
-      &-mt20 {
-        margin-top: 20px;
-      }
-    }
+
 
     @include for-big-desktop-up {
       width: max-content;
@@ -54,6 +46,19 @@
     }
     @include for-phone-only {
       margin-top: 30px;
+    }
+
+    &_active {
+      background-color: #FFFFFF;
+      span {
+        color: #000000;
+      }
+      &-mt20 {
+        margin-top: 20px;
+        @include for-tablet-landscape-up {
+          margin-top: 20px;
+        }
+      }
     }
   }
 }

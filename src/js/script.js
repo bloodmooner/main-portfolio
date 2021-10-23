@@ -72,15 +72,7 @@ if(reviewsItems) {
 
 
 
-let commentsRating = document.querySelector('.comments__rating');
 
-if(commentsRating) {
-  let commentsRatingWidth = commentsRating.clientWidth;
-
-  commentsRating.addEventListener('click', () =>{
-    commentsRating.style = '--rating: 1';
-  });
-}
 
 
 
@@ -380,9 +372,33 @@ if(orderTabs.length > 0) {
 }
 
 
-const controlsSearch = document.querySelector('.controls__search');
-
-console.log(controlsSearch)
 
 
+/* let commentsRating = document.querySelector('.comments__rating');
 
+if(commentsRating) {
+  let commentsRatingWidth = commentsRating.clientWidth;
+
+  commentsRating.addEventListener('click', () =>{
+    commentsRating.style = '--rating: 1';
+  });
+} */
+
+
+
+const ratingContainer = document.querySelector('.comments__rating-container');
+const ratingStars = ratingContainer.querySelectorAll('.comments__rating-item');
+const ratingNumber = document.querySelector('.comments_rating-nummber');
+
+ratingStars.forEach((star, index) => {
+  star.addEventListener('click', () => {
+    ratingNumber.value = index + 1;
+    for(let i = 0; i < ratingStars.length; i++) {
+      if(i <= index) {
+        ratingStars[i].classList.add('comments__rating-item_active');
+      } else {
+        ratingStars[i].classList.remove('comments__rating-item_active');
+      }
+    }
+  });
+});
