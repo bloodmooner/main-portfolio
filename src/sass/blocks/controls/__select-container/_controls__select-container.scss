@@ -6,10 +6,22 @@
     z-index: 100;
     width: 100%;
     background-color: #444444;
+    @include for-tablet-portrait-up {
+      bottom: -240px;
+    }
+    @include for-phone-only {
+      bottom: -240px;
+    }
     &_active {
       display: grid;
       grid-template-columns: 1fr;
       grid-auto-rows: minmax(120px, auto);
+      @include for-tablet-portrait-up {
+        grid-auto-rows: minmax(80px, auto);
+      }
+      @include for-phone-only {
+        grid-auto-rows: minmax(80px, auto);
+      }
     }
   }
 }

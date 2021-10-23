@@ -8,7 +8,7 @@
     line-height: 25px;
     transition: 0.4s ease-in-out;
     @include for-big-desktop-up {
-      padding: 5% 15% 5% 15%;
+      padding: 5% 5% 5% 5%;
     }
     &_border-white {
       &::before {

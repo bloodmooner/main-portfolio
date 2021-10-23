@@ -8,5 +8,14 @@
     @include for-big-desktop-up {
       padding-left: 5%;
     }
+    @include for-tablet-landscape-up {
+      padding-top: 2px;
+    }
+    @include for-tablet-portrait-up {
+      padding-top: 1px;
+    }
+    @include for-phone-only {
+      padding-top: 2px;
+    }
   }
 }

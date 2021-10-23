@@ -23,6 +23,7 @@ if(burgerMenuClose) {
 
 
 let selectCategory = document.querySelector('.controls__item_category');
+let selectTag = document.querySelector('.controls__item_tag');
 
 if(selectCategory) {
   let selectTriangle = selectCategory.querySelectorAll('.controls__triangle-line');
@@ -33,11 +34,11 @@ if(selectCategory) {
     selectTriangle.forEach((triangle) => {
       triangle.classList.toggle('controls__triangle-line_down');
     });
-    selectContainer.classList.toggle('controls__select-container_active')
+    selectContainer.classList.toggle('controls__select-container_active');
   });
 }
 
-let selectTag = document.querySelector('.controls__item_tag');
+
 
 if(selectTag) {
   let selectTriangle = selectTag.querySelectorAll('.controls__triangle-line');
@@ -363,7 +364,8 @@ paragrapList.forEach((paragraph) => {
 
 const orderTabs = document.querySelectorAll('.order__radio');
 
-if(orderTabs) {
+
+if(orderTabs.length > 0) {
   const orderPrices = document.querySelectorAll('.order__radio-price');
   const orderPriceElem = document.querySelector('.order__price');
 
@@ -377,6 +379,10 @@ if(orderTabs) {
   });
 }
 
+
+const controlsSearch = document.querySelector('.controls__search');
+
+console.log(controlsSearch)
 
 
 
