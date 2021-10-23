@@ -1,9 +1,14 @@
 .order {
   &__plan {
-    margin-bottom: 70px;
+    margin: 55px 0 50px 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 120px;
     border: 1px solid #333333;
+    label {
+      font-weight: 800;
+      font-size: 20px;
+      line-height: 50px;
+    }
 }
 }

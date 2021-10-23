@@ -367,6 +367,8 @@ if(orderTabs) {
   const orderPrices = document.querySelectorAll('.order__radio-price');
   const orderPriceElem = document.querySelector('.order__price');
 
+  orderPriceElem.textContent = orderPrices[0].value;
+
 
   orderTabs.forEach((orderTab, index) => {
     orderTab.addEventListener('click', () => {
