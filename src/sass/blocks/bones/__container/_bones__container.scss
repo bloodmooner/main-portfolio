@@ -26,7 +26,7 @@
       grid-auto-rows: 640px;
       @include for-big-desktop-up {
         grid-template-columns: repeat(4, 1fr);
-        grid-auto-rows: 100%;
+        grid-auto-rows: 25vw;
       }
       @include for-desktop-up {
         grid-template-columns: repeat(3,1fr);

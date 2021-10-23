@@ -3,5 +3,9 @@
     width: 50px;
     height: 2px;
     background-color: #FFFFFF;
+    @include for-big-desktop-up {
+      width: 100%;
+      height: calc(2px + 0.1vw);
+    }
   }
 }

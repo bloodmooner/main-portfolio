@@ -200,7 +200,7 @@ h1, h2, h3, h4, h5, h6, p, label {
   position: relative;
   @include for-big-desktop-up {
     max-width: inherit;
-    padding: 0 5%;
+    padding: 0 1.7%;
   }
   @include for-desktop-up {
     padding: 0 30px;

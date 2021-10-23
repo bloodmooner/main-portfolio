@@ -21,6 +21,11 @@
     @include for-phone-only {
       font-size: 0.7em;
     }
+    &_filter {
+      @include for-phone-only {
+        margin: 2px 0 0 11px;
+      }
+    }
   }
 }
 
