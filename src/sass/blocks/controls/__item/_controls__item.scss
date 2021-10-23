@@ -6,12 +6,14 @@
     border-right: 1px solid  #333333;
     font-size: 25px;
     line-height: 50px;
+    @include for-big-desktop-up {
+      padding: 6% 0;
+      border-right: calc(1px + 0.04vw) solid #333333;
+    }
     &:last-child {
       border-right: none;
     }
-    @include for-big-desktop-up {
-      padding: 6% 0;
-    }
+
 
 
     // Расположение в controls__container Grid сетки на мобильной версии

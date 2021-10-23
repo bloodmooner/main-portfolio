@@ -6,6 +6,9 @@
   }
   &_border-gray {
     border-bottom: 1px solid #333333;
+    @include for-big-desktop-up {
+      border-bottom: calc(1px + 0.04vw) solid #333333;
+    }
   }
   &_animated {
     &::after {
@@ -17,6 +20,9 @@
       height: 1px;
       background-color: rgba(255, 255, 255, 0.2);;
       animation: growElem 3s;
+      @include for-big-desktop-up {
+        height: calc(1px + 0.04vw);
+      }
     }
     @include for-tablet-landscape-up {
       &::after {
