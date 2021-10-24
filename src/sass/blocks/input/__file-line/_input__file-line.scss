@@ -1,0 +1,49 @@
+.input {
+  &__file-line {
+
+    &_horizontal {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate3d(-50%, -50%, 0) ;
+      display: block;
+      width: 50px;
+      height: 4px;
+      background-color: #727272;
+      transition: 0.2s all;
+      &_animated {
+        position: absolute;
+        left: 7px;
+        top: 39%;
+        height: 53%;
+        width: 4px;
+        background-color: #237544;
+        content: "";
+        transform: translateX(10px) rotate(-45deg);
+        transform-origin: left bottom;
+      }
+    }
+
+    &_vertical {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      display: block;
+      width: 4px;
+      height: 50px;
+      background-color: #727272;
+      transition: 0.2s all;
+      &_animated {
+        position: absolute;
+        left: 6px;
+        bottom: 0;
+        height: 4px;
+        width: 90%;
+        background-color: #237544;
+        content: "";
+        transform: translateX(10px) rotate(-45deg);
+        transform-origin: left top;
+      }
+    }
+  }
+}

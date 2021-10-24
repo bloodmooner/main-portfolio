@@ -5,7 +5,9 @@
     height: 100%;
     background-color: #444444;
     @include for-big-desktop-up {
-      max-width: 40%;
+      max-width: initial;
+      width: calc(150px + 5vw);
+      height: calc(150px + 5vw);
     }
     @include for-desktop-up {
       max-width: 130px;

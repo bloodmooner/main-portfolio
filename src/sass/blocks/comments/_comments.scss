@@ -28,7 +28,13 @@
       color: #727272;
     }
     @include for-big-desktop-up {
-      font-size: calc(1em + .9vw);
+      font-size: calc(1em + 0.9vw);
+      height: calc(50px + 0.9vw);
+    }
+    @include for-desktop-up {
+      height: 35px;
+      font-size: 0.8em;
+      line-height: 1em;
     }
     @include for-tablet-landscape-up {
       &:nth-child(2) {
@@ -47,5 +53,10 @@
     &::placeholder {
       color: #727272;
     }
+    @include for-big-desktop-up {
+      font-size: calc(1em + 0.5vw);
+      line-height: 1em;
+    }
   }
 }
+

@@ -194,8 +194,24 @@ menuLinks.forEach((menuLink, index) => {
 const writeCommentBtn = document.querySelector('.controls__item_write-comment');
 
 
+
 if(writeCommentBtn) {
+  const commentsContainer = document.querySelector('.comments__container');
   const commentsCount = document.querySelectorAll('.comments__item').length;
+
+  // Creating Form to add new comment
+  /* let commentsItem = document.createElement('div');
+  commentsItem.classList.add('comments__item',  'comments__item_new', 'comments__item_new-nodisplay', 'comments__item_active');
+
+  let commentsForm = document.createElement('form');
+  commentsForm.classList.add('comments__form');
+  commentsItem.append(commentsForm);
+
+  let commentsInfo = document.createElement('div');
+  commentsInfo.classList.add('comments__info');
+  commentsForm.append(commentsInfo);
+
+  commentsContainer.prepend(commentsItem); */
 
 
   const newCommentBlock = document.querySelector('.comments__item_new');
@@ -402,3 +418,27 @@ ratingStars.forEach((star, index) => {
     }
   });
 });
+
+
+
+const fileInput = document.querySelector('.input__file');
+
+if(fileInput) {
+  const fileInputLineHorizontal = document.querySelector('.input__file-line_horizontal');
+  const fileInputLineVertical = document.querySelector('.input__file-line_vertical');
+
+
+  fileInput.addEventListener('change', function (e) {
+    let countFiles = '';
+    if (this.files && this.files.length >= 1)
+      countFiles = this.files.length;
+
+    if (countFiles) {
+      fileInputLineHorizontal.classList.add('input__file-line_horizontal_animated');
+      fileInputLineVertical.classList.add('input__file-line_vertical_animated');
+    }
+  });
+}
+
+
+
