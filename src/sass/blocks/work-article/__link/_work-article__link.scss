@@ -8,6 +8,9 @@
     line-height: 2em;
     text-decoration: underline;
     color: #FFFFFF;
+    &:hover {
+      color: #FFFFFF;
+    }
     @include for-big-desktop-up {
       font-size: calc(0.5em + 1vw);
     }
