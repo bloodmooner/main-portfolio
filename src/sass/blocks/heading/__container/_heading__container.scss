@@ -32,6 +32,9 @@
     }
     &_prices {
       padding: 90px 0;
+      @include for-phone-only {
+        padding: 50px 0;
+      }
     }
     &_responsive {
       @include for-big-desktop-up {
