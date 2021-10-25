@@ -28,6 +28,10 @@
       &:nth-child(3n) {
         border-right: none;
       }
+      @include for-big-desktop-up {
+        border-right: calc(1px + 0.05vw) solid #333333;
+        border-bottom: calc(1px + 0.05vw) solid #333333;
+      }
       @include for-tablet-landscape-up {
         &:nth-child(3n) {
           border-right: 1px solid #333333;

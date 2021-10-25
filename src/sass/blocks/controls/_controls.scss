@@ -1,7 +1,7 @@
 .controls {
   border-bottom: 1px solid #333333;
   @include for-big-desktop-up {
-    border-bottom: calc(1px + 0.04vw) solid #333333;
+    border-bottom: calc(1px + 0.05vw) solid #333333;
   }
   @include for-tablet-landscape-up {
     .container {
