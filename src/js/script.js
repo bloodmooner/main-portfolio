@@ -199,27 +199,174 @@ if(writeCommentBtn) {
   const commentsContainer = document.querySelector('.comments__container');
   const commentsCount = document.querySelectorAll('.comments__item').length;
 
-  // Creating Form to add new comment
-  /* let commentsItem = document.createElement('div');
-  commentsItem.classList.add('comments__item',  'comments__item_new', 'comments__item_new-nodisplay', 'comments__item_active');
-
-  let commentsForm = document.createElement('form');
-  commentsForm.classList.add('comments__form');
-  commentsItem.append(commentsForm);
-
-  let commentsInfo = document.createElement('div');
-  commentsInfo.classList.add('comments__info');
-  commentsForm.append(commentsInfo);
-
-  commentsContainer.prepend(commentsItem); */
 
 
-  const newCommentBlock = document.querySelector('.comments__item_new');
+
+
 
   writeCommentBtn.addEventListener('click', () => {
     writeCommentBtn.classList.toggle('controls__item_active-white');
-    newCommentBlock.classList.toggle('comments__item_new-nodisplay');
-    newCommentBlock.scrollIntoView(true);
+
+
+
+    // Creating Form to add new comment
+    let commentsItem = document.createElement('div');
+    commentsItem.classList.add('comments__item',  'comments__item_new', 'comments__item_active');
+
+    let commentsForm = document.createElement('form');
+    commentsForm.classList.add('comments__form');
+    commentsForm.setAttribute('action', '#');
+    commentsItem.append(commentsForm);
+
+    let commentsInfo = document.createElement('div');
+    commentsInfo.classList.add('comments__info');
+    commentsForm.append(commentsInfo);
+
+    let inputWrapper = document.createElement('div');
+    inputWrapper.classList.add('input__wrapper');
+    commentsInfo.append(inputWrapper);
+
+    let inputFile = document.createElement('input');
+    inputFile.classList.add('input', 'input__file');
+    inputFile.setAttribute('type', 'file');
+    inputFile.setAttribute('name', 'file');
+    inputFile.setAttribute('id', 'input__file');
+    inputWrapper.append(inputFile);
+
+    let inputFileButton = document.createElement('label');
+    inputFileButton.classList.add('input__file-button');
+    inputFileButton.setAttribute('for', 'input__file');
+    inputWrapper.append(inputFileButton);
+
+    let inputFileContent = document.createElement('div');
+    inputFileContent.classList.add('input__file-content');
+    inputFileButton.append(inputFileContent);
+
+    let inputFileLineHorizontal = document.createElement('span');
+    let inputFileLineVertical = document.createElement('span');
+    inputFileLineHorizontal.classList.add('input__file-line_horizontal');
+    inputFileLineVertical.classList.add('input__file-line_vertical');
+    inputFileContent.append(inputFileLineHorizontal);
+    inputFileContent.append(inputFileLineVertical);
+
+    let commentsDescription = document.createElement('div');
+    commentsDescription.classList.add('comments__description');
+    commentsInfo.append(commentsDescription);
+
+    let commentsRole = document.createElement('span');
+    commentsRole.classList.add('comments__role');
+    commentsRole.textContent = 'Гость';
+    commentsDescription.append(commentsRole);
+
+    let commentsInputs = document.createElement('div');
+    commentsInputs.classList.add('comments__inputs');
+    commentsDescription.append(commentsInputs);
+
+    let commentsInputsFieldName = document.createElement('input');
+    commentsInputsFieldName.classList.add('comments__inputs-field');
+    commentsInputsFieldName.setAttribute('type', 'text');
+    commentsInputsFieldName.setAttribute('placeholder', 'Имя');
+    commentsInputsFieldName.setAttribute('name', 'comments_name');
+    commentsInputs.append(commentsInputsFieldName);
+
+    let commentsInputsFieldSername = document.createElement('input');
+    commentsInputsFieldSername.classList.add('comments__inputs-field');
+    commentsInputsFieldSername.setAttribute('type', 'text');
+    commentsInputsFieldSername.setAttribute('placeholder', 'Фамилия');
+    commentsInputsFieldSername.setAttribute('name', 'comments_sername');
+    commentsInputs.append(commentsInputsFieldSername);
+
+    let commentsSeparator = document.createElement('div');
+    commentsSeparator.classList.add('comments__separator');
+    commentsForm.append(commentsSeparator);
+
+    let commentsRatingContainer = document.createElement('div');
+    commentsRatingContainer.classList.add('comments__rating-container');
+    commentsSeparator.append(commentsRatingContainer);
+
+    let commentsRatingItem = document.createElementNS('http://www.w3.org/2000/svg','svg');
+    commentsRatingItem.classList.add('comments__rating-item');
+    commentsRatingItem.setAttribute('viewBox', '0 0 18 17');
+    commentsRatingItem.setAttribute('fill', 'none');
+    commentsRatingItem.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
+    commentsRatingContainer.append(commentsRatingItem);
+
+    let commentsRatingItemPath = document.createElementNS('http://www.w3.org/2000/svg','path');
+    commentsRatingItemPath.setAttribute(
+      'd',
+      'M8.52447 0.463281C8.67415 0.00262594 9.32585 0.00262594 9.47553 0.463281L11.1329 5.56409C11.1998 5.77011 11.3918 5.90959 11.6084 5.90959H16.9717C17.4561 5.90959 17.6575 6.52939 17.2656 6.81409L12.9266 9.96657C12.7514 10.0939 12.678 10.3196 12.745 10.5256L14.4023 15.6264C14.552 16.0871 14.0248 16.4701 13.6329 16.1854L9.29389 13.0329C9.11865 12.9056 8.88135 12.9056 8.70611 13.0329L4.3671 16.1854C3.97524 16.4701 3.448 16.0871 3.59768 15.6264L5.25503 10.5256C5.32197 10.3196 5.24864 10.0939 5.07339 9.96657L0.734384 6.81409C0.342527 6.52939 0.543915 5.90959 1.02828 5.90959H6.39159C6.6082 5.90959 6.80018 5.77011 6.86712 5.56409L8.52447 0.463281Z'
+      );
+    commentsRatingItem.append(commentsRatingItemPath);
+
+    for(let i = 0; i < 4; i++) {
+      commentsRatingContainer.append(commentsRatingItem.cloneNode(true));
+    }
+
+    let commentsRatingNumber = document.createElement('input');
+    commentsRatingNumber.classList.add('comments_rating-nummber');
+    commentsRatingNumber.setAttribute('type', 'text');
+    commentsRatingNumber.setAttribute('name', 'comments_rating');
+    commentsRatingNumber.setAttribute('value', '0');
+    commentsRatingNumber.setAttribute('hidden', 'hidden');
+    commentsSeparator.append(commentsRatingNumber);
+
+    let commentsLine = document.createElement('div');
+    commentsLine.classList.add('comments__line');
+    commentsSeparator.append(commentsLine);
+
+    let commentsText = document.createElement('div');
+    commentsText.classList.add('comments__text');
+    commentsForm.append(commentsText);
+
+    let commentsTextarea = document.createElement('textarea');
+    commentsTextarea.classList.add('comments__textarea');
+    commentsTextarea.setAttribute('placeholder', 'Ваш комментарий');
+    commentsTextarea.setAttribute('name', 'comments_text');
+    commentsText.append(commentsTextarea);
+
+    let commentsButton = document.createElement('button');
+    commentsButton.classList.add('comments__button', 'comments__button_active', 'comments__button_active-mt20');
+    commentsForm.append(commentsButton);
+
+    let commentsButtonText = document.createElement('span');
+    commentsButtonText.textContent = 'Отправить';
+    commentsButton.append(commentsButtonText);
+
+
+
+
+    let commentsContainerCount = document.querySelectorAll('.comments__item').length;
+
+    if(commentsContainerCount > commentsCount) {
+      const deletedCommentsItem = document.querySelector('.comments__item_new')
+      deletedCommentsItem.remove();
+      console.log('deleted');
+    } else {
+      commentsContainer.prepend(commentsItem);
+
+      const ratingContainer = document.querySelector('.comments__rating-container');
+      const ratingStars = ratingContainer.querySelectorAll('.comments__rating-item');
+      const ratingNumber = document.querySelector('.comments_rating-nummber');
+
+      ratingStars.forEach((star, index) => {
+        star.addEventListener('click', () => {
+          ratingNumber.value = index + 1;
+          for(let i = 0; i < ratingStars.length; i++) {
+            if(i <= index) {
+              ratingStars[i].classList.add('comments__rating-item_active');
+            } else {
+              ratingStars[i].classList.remove('comments__rating-item_active');
+            }
+          }
+        });
+      });
+    }
+
+    console.log(commentsCount);
+    console.log(commentsContainerCount);
+
+    //newCommentBlock.classList.toggle('comments__item_new-nodisplay');
+    commentsItem.scrollIntoView(true);
   });
 }
 
@@ -402,22 +549,7 @@ if(commentsRating) {
 
 
 
-const ratingContainer = document.querySelector('.comments__rating-container');
-const ratingStars = ratingContainer.querySelectorAll('.comments__rating-item');
-const ratingNumber = document.querySelector('.comments_rating-nummber');
 
-ratingStars.forEach((star, index) => {
-  star.addEventListener('click', () => {
-    ratingNumber.value = index + 1;
-    for(let i = 0; i < ratingStars.length; i++) {
-      if(i <= index) {
-        ratingStars[i].classList.add('comments__rating-item_active');
-      } else {
-        ratingStars[i].classList.remove('comments__rating-item_active');
-      }
-    }
-  });
-});
 
 
 
