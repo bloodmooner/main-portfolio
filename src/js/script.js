@@ -360,6 +360,25 @@ if(writeCommentBtn) {
           }
         });
       });
+
+      const fileInput = document.querySelector('.input__file');
+
+      if(fileInput) {
+        const fileInputLineHorizontal = document.querySelector('.input__file-line_horizontal');
+        const fileInputLineVertical = document.querySelector('.input__file-line_vertical');
+
+
+        fileInput.addEventListener('change', function (e) {
+          let countFiles = '';
+          if (this.files && this.files.length >= 1)
+            countFiles = this.files.length;
+
+          if (countFiles) {
+            fileInputLineHorizontal.classList.add('input__file-line_horizontal_animated');
+            fileInputLineVertical.classList.add('input__file-line_vertical_animated');
+          }
+        });
+      }
     }
 
     console.log(commentsCount);
@@ -553,24 +572,7 @@ if(commentsRating) {
 
 
 
-const fileInput = document.querySelector('.input__file');
 
-if(fileInput) {
-  const fileInputLineHorizontal = document.querySelector('.input__file-line_horizontal');
-  const fileInputLineVertical = document.querySelector('.input__file-line_vertical');
-
-
-  fileInput.addEventListener('change', function (e) {
-    let countFiles = '';
-    if (this.files && this.files.length >= 1)
-      countFiles = this.files.length;
-
-    if (countFiles) {
-      fileInputLineHorizontal.classList.add('input__file-line_horizontal_animated');
-      fileInputLineVertical.classList.add('input__file-line_vertical_animated');
-    }
-  });
-}
 
 
 

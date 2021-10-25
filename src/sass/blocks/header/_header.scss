@@ -3,6 +3,9 @@
   @include for-tablet-portrait-up {
     height: 100px;
   }
+  &_prices {
+    height:auto;
+  }
   &_animated {
     animation: fadeIn 1.5s;
   }
