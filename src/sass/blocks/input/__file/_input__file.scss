@@ -3,5 +3,8 @@
     opacity: 0;
     visibility: hidden;
     position: absolute;
+    &_brief {
+      left: 0;
+    }
   }
 }

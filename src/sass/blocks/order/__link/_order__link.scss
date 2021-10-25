@@ -6,6 +6,9 @@
     font-size: 1em;
     line-height: 2em;
     color: #FFFFFF;
+    &:hover {
+      color: #FFFFFF;
+    }
     @include for-big-desktop-up {
       font-size: calc(1em + 0.3vw);
     }

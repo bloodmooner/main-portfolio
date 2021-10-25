@@ -30,5 +30,12 @@
       height: auto;
       aspect-ratio: 1 / 1;
     }
+    &_brief {
+      width: 250px;
+      height: 50px;
+      margin: initial;
+      background: transparent;
+      font-size: 1.57rem;
+    }
   }
 }
