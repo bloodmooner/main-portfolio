@@ -488,8 +488,6 @@ var selector = $('.menu__list').find('a').length;
 var burgerMenus = $('.burger-nav');
 var burgerLines = $('.burger__line')
 
-
-console.log(burgerMenus);
 //var selector = $(".tabs").find(".selector");
 var activeItem = tabs.find('.active');
 var activeWidth = activeItem.innerWidth();
@@ -503,7 +501,7 @@ $(".menu__list").on("mouseover","a",function(e){
   $('.menu__list a').removeClass("active");
   $(this).addClass('active');
 
-  if($('.burger-nav').hasClass('active')) {
+  if($(window).width() > 599 && $('.burger-nav').hasClass('active')) {
     $(".burger__line").css('background-color', '#151515');
   } else {
     $(".burger__line").css('background-color', '#FFFFFF');
