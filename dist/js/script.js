@@ -501,7 +501,7 @@ $(".menu__list").on("mouseover","a",function(e){
   $('.menu__list a').removeClass("active");
   $(this).addClass('active');
 
-  if($(window).width() > 599 && $('.burger-nav').hasClass('active')) {
+  if($(window).width() > 900 && $('.burger-nav').hasClass('active')) {
     $(".burger__line").css('background-color', '#151515');
   } else {
     $(".burger__line").css('background-color', '#FFFFFF');
