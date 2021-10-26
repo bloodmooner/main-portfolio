@@ -381,8 +381,7 @@ if(writeCommentBtn) {
       }
     }
 
-    console.log(commentsCount);
-    console.log(commentsContainerCount);
+
 
     //newCommentBlock.classList.toggle('comments__item_new-nodisplay');
     commentsItem.scrollIntoView(true);
@@ -485,6 +484,8 @@ $(document).ready(function() {
 
 var tabs = $('.menu__list');
 var selector = $('.menu__list').find('a').length;
+var burgerMenus = $('.burger-nav');
+console.log(burgerMenus);
 //var selector = $(".tabs").find(".selector");
 var activeItem = tabs.find('.active');
 var activeWidth = activeItem.innerWidth();
