@@ -1,0 +1,170 @@
+.bones {
+  &__item {
+    position: relative;
+    padding: 40px 60px 60px 60px;
+    /* border-right: 1px solid #333333;
+    border-bottom: 1px solid #333333; */
+    font-size: 20px;
+    line-height: 25px;
+    transition: 0.4s ease-in-out;
+    @include for-big-desktop-up {
+      padding: 5% 5% 5% 5%;
+    }
+    &_border-white {
+      &::before {
+        /* content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 1px;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.2);;
+        animation: growElem 3s; */
+      }
+
+    }
+    &_border-gray {
+      border-right: 1px solid #333333;
+      border-bottom: 1px solid #333333;
+      @include for-big-desktop-up {
+        border-right: calc(1px + 0.04vw) solid #333333;
+        border-bottom: calc(1px + 0.04vw) solid #333333;
+      }
+      &:nth-child(3n) {
+        border-right: none;
+      }
+      @include for-tablet-landscape-up {
+        &:nth-child(3n) {
+          border-right: 1px solid #333333;
+          @include for-big-desktop-up {
+            border-right: calc(1px + 0.04vw) solid #333333;
+          }
+        }
+      }
+    }
+    &_oneline {
+      &:nth-child(1), &:nth-child(2) {
+        &::after {
+          content: '';
+          position: absolute;
+          right: 0;
+          top: 0;
+          width: 1px;
+          height: 100%;
+          background-color: rgba(255, 255, 255, 0.2);
+          animation: growElem 3s;
+          @include for-big-desktop-up {
+            width: calc(1px + 0.04vw);
+          }
+        }
+        @include for-tablet-landscape-up {
+          &::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 1px;
+            background-color: rgba(255, 255, 255, 0.2);
+            animation: growElem 3s;
+            @include for-big-desktop-up {
+              height: calc(1px + 0.04vw);
+            }
+          }
+        }
+        @include for-tablet-portrait-up {
+          &::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 1px;
+            background-color: rgba(255, 255, 255, 0.2);
+            animation: growElem 3s;
+            @include for-big-desktop-up {
+              height: calc(1px + 0.04vw);
+            }
+          }
+        }
+        @include for-phone-only {
+          border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+          &::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 0;
+            height: 0;
+          }
+        }
+
+      }
+    }
+    &_cover {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      &:hover {
+        background-size: 110%;
+      }
+    }
+    &_prices {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    &_work {
+      @include for-big-desktop-up {
+        padding: 10% 7% 10% 7%;
+      }
+    }
+    &_active {
+      background-color: #fff;
+    }
+    &_paddingtop-50 {
+      padding: 50px 60px 60px 60px;
+      @include for-big-desktop-up {
+        padding: 5% 15% 5% 15%;
+      }
+    }
+
+    // Animations
+
+    &_animate-showup {
+      display: block;
+      animation: showUp 0.6s;
+    }
+    &_animate-hide-down {
+      display: none;
+      animation: hideDown 0.6s;
+    }
+
+    &_animate-show-right {
+      display: none;
+      animation: showRight 0.6s;
+    }
+
+
+    &_more {
+      position: relative;
+      display: none;
+      height: 100%;
+      z-index: 11;
+    }
+    @include for-desktop-up {
+      padding: 40px 30px 40px 30px;
+    }
+    @include for-tablet-landscape-up {
+      padding: 40px 30px 40px 30px;
+    }
+    @include for-tablet-portrait-up {
+      padding: 40px 30px 40px 30px;
+    }
+    @include for-phone-only {
+      padding: 30px 15px 30px 15px;
+    }
+  }
+}
+
+

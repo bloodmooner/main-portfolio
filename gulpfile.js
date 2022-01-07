@@ -1,12 +1,11 @@
 const gulp        = require('gulp');
 const browserSync = require('browser-sync');
-const sass        = require('gulp-sass')(require('sass'));
+const sass        = require('gulp-sass');
 const cleanCSS = require('gulp-clean-css');
 const autoprefixer = require('gulp-autoprefixer');
 const rename = require("gulp-rename");
 const imagemin = require('gulp-imagemin');
-//const htmlmin = require('gulp-htmlmin');
-const pug = require('gulp-pug');
+const htmlmin = require('gulp-htmlmin');
 
 gulp.task('server', function() {
 
@@ -16,12 +15,12 @@ gulp.task('server', function() {
         }
     });
 
-    gulp.watch("src/pug/pages/*.pug").on('change', browserSync.reload);
+    gulp.watch("src/*.html").on('change', browserSync.reload);
 });
 
 gulp.task('styles', function() {
     return gulp.src("src/sass/**/*.+(scss|sass)")
-        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+        .pipe(sass({outputStyle: 'nested'}).on('error', sass.logError))
         .pipe(rename({suffix: '.min', prefix: ''}))
         .pipe(autoprefixer())
         .pipe(cleanCSS({compatibility: 'ie8'}))
@@ -31,7 +30,7 @@ gulp.task('styles', function() {
 
 gulp.task('watch', function() {
     gulp.watch("src/sass/**/*.+(scss|sass|css)", gulp.parallel('styles'));
-    gulp.watch("src/pug/pages/*.pug").on('change', gulp.parallel('html'));
+    gulp.watch("src/*.html").on('change', gulp.parallel('html'));
     gulp.watch("src/js/**/*.js").on('change', gulp.parallel('scripts'));
     gulp.watch("src/fonts/**/*").on('all', gulp.parallel('fonts'));
     gulp.watch("src/icons/**/*").on('all', gulp.parallel('icons'));
@@ -39,11 +38,8 @@ gulp.task('watch', function() {
 });
 
 gulp.task('html', function () {
-    return gulp.src("src/pug/pages/*.pug")
-        //.pipe(htmlmin({ collapseWhitespace: true }))
-        .pipe(pug({
-            pretty: true
-        }))
+    return gulp.src("src/*.html")
+        .pipe(htmlmin({ collapseWhitespace: true }))
         .pipe(gulp.dest("dist/"));
 });
 

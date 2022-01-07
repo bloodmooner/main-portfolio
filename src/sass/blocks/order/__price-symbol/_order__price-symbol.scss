@@ -1,0 +1,17 @@
+.order {
+  &__price-symbol {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2em;
+    line-height: 1em;
+    text-align: justify;
+    color: #FFFFFF;
+    @include for-big-desktop-up {
+      font-size: calc(2em + 0.3vw);
+    }
+    @include for-phone-only {
+      font-size: 1.5em;
+      line-height: 1em;
+    }
+  }
+}

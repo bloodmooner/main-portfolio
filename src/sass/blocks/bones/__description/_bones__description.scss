@@ -1,0 +1,12 @@
+.bones {
+  &__description {
+    font-size: 25px;
+    line-height: 50px;
+    &::nth-child(2) {
+      padding-left: 25px;
+    }
+    @include for-phone-only {
+      line-height: 25px;
+    }
+  }
+}

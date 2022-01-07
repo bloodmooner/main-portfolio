@@ -1,0 +1,41 @@
+.input {
+  &__file-button {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background: #444444;
+    color: #fff;
+    font-size: 1.125rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 0 auto;
+    @include for-big-desktop-up {
+      width: calc(150px + 5vw);
+      height: calc(150px + 5vw);
+    }
+    @include for-desktop-up {
+      width: 130px;
+      height: 130px;
+    }
+    @include for-tablet-landscape-up {
+      width: 175px;
+      height: 175px;
+    }
+    @include for-phone-only {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1 / 1;
+    }
+    &_brief {
+      width: 250px;
+      height: 50px;
+      margin: initial;
+      background: transparent;
+      font-size: 1.57rem;
+    }
+  }
+}

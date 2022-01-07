@@ -1,0 +1,18 @@
+.order {
+  &__radio[type="radio"] {
+    border-radius: 0px;
+    cursor: pointer;
+    background-color: transparent;
+    -webkit-appearance: none; /*to disable the default appearance of radio button*/
+    -moz-appearance: none;
+    width: 100%;
+    height: 100%;
+  }
+  &__radio[type="radio"]:checked { /*no need, if you don't disable default appearance*/
+    background-color: #444444;
+  }
+
+  &__radio[type="radio"]:checked ~ span:first-of-type {
+    color: white;
+  }
+}

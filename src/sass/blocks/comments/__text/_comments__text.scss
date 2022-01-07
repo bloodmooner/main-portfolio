@@ -1,0 +1,26 @@
+.comments {
+  &__text {
+    margin-top: 55px;
+    font-size: 20px;
+    line-height: 25px;
+    @include for-phone-only {
+      margin-top: 30px;
+    }
+    p {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 1em;
+      line-height: 1em;
+      text-align: justify;
+      color: #FFFFFF;
+      @include for-big-desktop-up {
+        font-size: calc(1em + 0.5vw);
+        line-height: 1em;
+      }
+      @include for-phone-only {
+        font-size: 0.7em;
+        line-height: 1.4em;
+      }
+    }
+  }
+}

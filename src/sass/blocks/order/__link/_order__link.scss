@@ -1,0 +1,19 @@
+.order {
+  &__link {
+    display: block;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1em;
+    line-height: 2em;
+    color: #FFFFFF;
+    &:hover {
+      color: #FFFFFF;
+    }
+    @include for-big-desktop-up {
+      font-size: calc(1em + 0.3vw);
+    }
+    &_underline {
+      text-decoration-line: underline;
+    }
+  }
+}

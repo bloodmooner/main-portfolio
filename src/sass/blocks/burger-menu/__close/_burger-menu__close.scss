@@ -1,0 +1,19 @@
+.burger-menu {
+  &__close {
+    display: block;
+    width: 22px;
+    height: 22px;
+    background-image: url('../../../assets/svg/close.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    @include for-big-desktop-up {
+      width: calc(22px + 1.5vh);
+    height: calc(22px + 1.5vh);
+    }
+    @include for-phone-only {
+      width: 17px;
+      height: 17px;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.burger {
+  &__container {
+    height: 15px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include for-big-desktop-up {
+      width: calc(50px + 1vw);
+      height: calc(15px + 0.5vw);
+    }
+  }
+}

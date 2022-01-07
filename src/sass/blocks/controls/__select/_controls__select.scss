@@ -1,0 +1,21 @@
+.controls {
+  &__select {
+    margin-left: 10px;
+    font-size: 1em;
+    line-height: 1em;
+    color: #FFFFFF;
+    @include for-big-desktop-up {
+      font-size: calc(1em + 0.5vw);
+    }
+    @include for-tablet-landscape-up {
+      font-size: 0.75em;
+    }
+    @include for-tablet-portrait-up {
+      font-size: 0.75em;
+    }
+    @include for-phone-only {
+      margin: 10px 0 0 0;
+      font-size: 0.7em;
+    }
+  }
+}

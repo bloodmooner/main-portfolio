@@ -1,0 +1,32 @@
+.heading {
+  &__title {
+    font-weight: 900;
+    font-size: 1em;
+    line-height: 1em;
+    color: #FFFFFF;
+    letter-spacing: -0.05em;
+    &_animated {
+      animation: raiseUp5percent 4s;
+    }
+    @include for-big-desktop-up {
+      font-size: calc(1em + 1.7vw);
+      line-height: 1em;
+    }
+    @include for-desktop-up {
+      font-size: 0.8em;
+      line-height: 1em;
+    }
+    @include for-tablet-landscape-up {
+      font-size: 0.6em;
+      line-height: 1em;
+    }
+    @include for-tablet-portrait-up {
+      font-size: 0.45em;
+      line-height: 1em;
+    }
+    @include for-phone-only {
+      font-size: 0.4em;
+      line-height: 1em;
+    }
+  }
+}

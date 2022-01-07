@@ -1,0 +1,15 @@
+.order {
+  &__subtitle {
+    margin-bottom: 85px;
+    font-size: 1.25em;
+    @include for-big-desktop-up {
+      font-size: calc(1.25em + 1vw);
+    }
+    @include for-phone-only {
+      margin-bottom: 30px;
+    }
+    &_plan {
+      margin-bottom: 15px;
+    }
+  }
+}

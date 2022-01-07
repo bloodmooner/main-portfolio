@@ -1,0 +1,25 @@
+.bones {
+  &__price {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 0.5em;
+    text-align: justify;
+    color: #FFFFFF;
+    @include for-big-desktop-up {
+      font-size: calc(1em + 0.5vw);
+    }
+    @include for-desktop-up {
+      font-size: 0.6em;
+      line-height: 1em;
+    }
+    @include for-tablet-landscape-up {
+      font-size: 0.8em;
+      line-height: 1em;
+    }
+    @include for-phone-only {
+      font-size: 0.5em;
+      line-height: 1em;
+    }
+  }
+}

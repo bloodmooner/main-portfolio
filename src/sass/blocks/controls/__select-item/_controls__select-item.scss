@@ -1,0 +1,19 @@
+.controls {
+  &__select-item {
+    position: relative;
+    padding: 35px 40px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 50px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    animation-duration: 1s;
+    animation-name: dropDown;
+    @include for-tablet-portrait-up {
+      padding: 15px 40px;
+    }
+    @include for-phone-only {
+      padding: 15px 40px;
+    }
+  }
+}

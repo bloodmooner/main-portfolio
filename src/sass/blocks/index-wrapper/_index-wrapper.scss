@@ -1,0 +1,25 @@
+.index-wrapper {
+  &_full-height {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1.5fr 3fr;
+    height: 100vh;
+    @include for-big-desktop-up {
+      grid-template-rows: 0.5fr 1.5fr 3fr;
+    }
+    @include for-tablet-landscape-up {
+      height: initial;
+      grid-template-rows: initial;
+
+    }
+    @include for-tablet-portrait-up {
+      height: initial;
+      grid-template-rows: initial;
+    }
+    @include for-phone-only {
+      height: initial;
+      grid-template-rows: initial;
+    }
+
+  }
+}

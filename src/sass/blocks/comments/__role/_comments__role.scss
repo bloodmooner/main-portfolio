@@ -1,0 +1,20 @@
+.comments {
+  &__role {
+    display: block;
+    margin: 15px 0 5px 0;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.5em;
+    line-height: 1em;
+    color: #FFFFFF;
+    @include for-big-desktop-up {
+      margin: 5% 0;
+      font-size: calc(0.5em + 0.5vw);
+    }
+    @include for-tablet-landscape-up {
+      font-size: 0.6em;
+      line-height: 1.8em;
+    }
+  }
+}
+

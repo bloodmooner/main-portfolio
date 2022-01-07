@@ -4,8 +4,185 @@
 
 @import 'libs/fonts';
 
+@import 'blocks/rating/rating';
+
+@import 'blocks/header/header';
+@import 'blocks/header/__wrapper/header__wrapper';
+@import 'blocks/header/__background-black/header__background-black';
+@import 'blocks/header/__background-img/header__background-img';
 
 
+@import 'blocks/logo/logo';
+@import 'blocks/logo/__wrapper/logo__wrapper';
+@import 'blocks/logo/__icon/logo__icon';
+@import 'blocks/logo/__text/logo__text';
+
+
+@import 'blocks/menu/menu';
+@import 'blocks/menu/__list/menu__list';
+@import 'blocks/menu/__element/menu__element';
+@import 'blocks/menu/__link/menu__link';
+
+
+@import 'blocks/burger/burger';
+@import 'blocks/burger/__container/burger__container';
+@import 'blocks/burger/__line/burger__line';
+
+
+@import 'blocks/heading/heading';
+@import 'blocks/heading/__container/heading__container';
+@import 'blocks/heading/__title/heading__title';
+
+
+@import 'blocks/controls/controls';
+@import 'blocks/controls/__container/controls__container';
+@import 'blocks/controls/__item/controls__item';
+@import 'blocks/controls/__icon/controls__icon';
+@import 'blocks/controls/__text/controls__text';
+@import 'blocks/controls/__search/controls__search';
+@import 'blocks/controls/__name/controls__name';
+@import 'blocks/controls/__rating/controls__rating';
+@import 'blocks/controls/__select/controls__select';
+@import 'blocks/controls/__content/controls__content';
+@import 'blocks/controls/__word/controls__word';
+@import 'blocks/controls/__number/controls__number';
+@import 'blocks/controls/__item-link/controls__item-link';
+
+@import 'blocks/controls/__select-container/controls__select-container';
+@import 'blocks/controls/__select-item/controls__select-item';
+@import 'blocks/controls/__select-link/controls__select-link';
+@import 'blocks/controls/__triangle/controls__triangle';
+@import 'blocks/controls/__triangle-line/controls__triangle-line';
+
+
+@import 'blocks/bones/bones';
+@import 'blocks/bones/__container/bones__container';
+@import 'blocks/bones/__item/bones__item';
+@import 'blocks/bones/__shadow/bones__shadow';
+@import 'blocks/bones/__information/bones__information';
+@import 'blocks/bones/__subtitle/bones__subtitle';
+@import 'blocks/bones/__title/bones__title';
+@import 'blocks/bones/__separator/bones__separator';
+@import 'blocks/bones/__date/bones__date';
+@import 'blocks/bones/__line/bones__line';
+@import 'blocks/bones/__caption/bones__caption';
+@import 'blocks/bones/__button/bones__button';
+@import 'blocks/bones/__bottom/bones__bottom';
+@import 'blocks/bones/__price/bones__price';
+@import 'blocks/bones/__img/bones__img';
+@import 'blocks/bones/__description/bones__description';
+@import 'blocks/bones/__description-text/bones__description-text';
+@import 'blocks/bones/__link/bones__link';
+
+@import 'blocks/bones/more/bones__more';
+@import 'blocks/bones/__item-container/bones__item-container';
+@import 'blocks/bones/__list/bones__list';
+@import 'blocks/bones/__list-item/bones__list-item';
+@import 'blocks/bones/__list-link/bones__list-link';
+@import 'blocks/bones/__list-divider/bones__list-divider';
+@import 'blocks/bones/__rating/bones__rating';
+
+
+@import 'blocks/work/work';
+@import 'blocks/work/__container/work__container';
+
+
+@import 'blocks/work-information/work-information';
+@import 'blocks/work-information/__container/work-information__container';
+@import 'blocks/work-information/__img/work-information__img';
+@import 'blocks/work-information/__description/work-information__description';
+@import 'blocks/work-information/__title/work-information__title';
+@import 'blocks/work-information/__text/work-information__text';
+@import 'blocks/work-information/__images/work-information__images';
+
+
+@import 'blocks/work-article/work-article';
+@import 'blocks/work-article/__header/work-article__header';
+@import 'blocks/work-article/__link/work-article__link';
+@import 'blocks/work-article/__title/work-article__title';
+@import 'blocks/work-article/__description/work-article__description';
+@import 'blocks/work-article/__subinfo/work-article__subinfo';
+
+
+@import 'blocks/comments/comments';
+@import 'blocks/comments/__title/comments__title';
+@import 'blocks/comments/__container/comments__container';
+@import 'blocks/comments/__item/comments__item';
+@import 'blocks/comments/__info/comments__info';
+@import 'blocks/comments/__photo/comments__photo';
+@import 'blocks/comments/__description/comments__description';
+@import 'blocks/comments/__role/comments__role';
+@import 'blocks/comments/__name/comments__name';
+@import 'blocks/comments/__separator/comments__separator';
+@import 'blocks/comments/__rating/comments__rating';
+@import 'blocks/comments/__line/comments__line';
+@import 'blocks/comments/__text/comments__text';
+@import 'blocks/comments/__button/comments__button';
+@import 'blocks/comments/__textarea/comments__textarea';
+@import 'blocks/comments/__inputs-field/comments__inputs-field';
+@import 'blocks/comments/__inputs/comments__inputs';
+
+
+@import 'blocks/order/__item/order__item';
+@import 'blocks/order/__subtitle/order__subtitle';
+@import 'blocks/order/__inputs/order__inputs';
+@import 'blocks/order/__input-container/order__input-container';
+@import 'blocks/order/__input/order__input';
+@import 'blocks/order/__validate/order__validate';
+@import 'blocks/order/__price/order__price';
+@import 'blocks/order/__link/order__link';
+@import 'blocks/order/__button/order__button';
+@import 'blocks/order/__price-symbol/order__price-symbol';
+
+@import 'blocks/order/__plan/order__plan';
+@import 'blocks/order/__radio/order__radio';
+@import 'blocks/order/__radio-text/order__radio-text';
+
+@import 'blocks/burger-menu/burger-menu';
+@import 'blocks/burger-menu/__container/burger-menu__container';
+@import 'blocks/burger-menu/__header/burger-menu__header';
+@import 'blocks/burger-menu/__title/burger-menu__title';
+@import 'blocks/burger-menu/__close/burger-menu__close';
+@import 'blocks/burger-menu/__social-container/burger-menu__social-container';
+@import 'blocks/burger-menu/__social-item/burger-menu__social-item';
+@import 'blocks/burger-menu/__social-link/burger-menu__social-link';
+@import 'blocks/burger-menu/__social-img/burger-menu__social-img';
+@import 'blocks/burger-menu/__menu/burger-menu__menu';
+@import 'blocks/burger-menu/__menu-list/burger-menu__menu-list';
+@import 'blocks/burger-menu/__menu-item/burger-menu__menu-item';
+@import 'blocks/burger-menu/__menu-link/burger-menu__menu-link';
+@import 'blocks/burger-menu/__footer/burger-menu__footer';
+@import 'blocks/burger-menu/__footer-list/burger-menu__footer-list';
+@import 'blocks/burger-menu/__footer-item/burger-menu__footer-item';
+@import 'blocks/burger-menu/__footer-link/burger-menu__footer-link';
+
+
+@import 'blocks/input/input';
+@import 'blocks/input/__file-button/input__file-button';
+@import 'blocks/input/__file-content/input__file-content';
+@import 'blocks/input/__file-line/input__file-line';
+@import 'blocks/input/__file/input__file';
+@import 'blocks/input/__wrapper/input__wrapper';
+
+
+@import 'blocks/index-wrapper/index-wrapper';
+
+
+@import 'blocks/modal-bg/modal-bg';
+
+
+
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #151515;
+  position: relative;
+}
 
 *, *:before, *:after {
   box-sizing: inherit;
@@ -28,15 +205,30 @@ h1, h2, h3, h4, h5, h6, p, label {
   padding-bottom: 0;
 }
 
-input, button, textarea {
-  outline: none;
-}
-
 .container {
   max-width: 1800px;
   width: 100%;
   margin: 0 auto;
   position: relative;
+  @include for-big-desktop-up {
+    max-width: inherit;
+    padding: 0 1.7%;
+  }
+  @include for-desktop-up {
+    padding: 0 30px;
+  }
+  @include for-tablet-landscape-up {
+    padding: 0 30px;
+  }
+  @include for-tablet-portrait-up {
+    padding: 0 30px;
+  }
+  @include for-phone-only {
+    padding: 0 15px;
+  }
+  &_full-height {
+    height: 100%;
+  }
 }
 
 button:active, button:focus {
@@ -45,3 +237,107 @@ button:active, button:focus {
 button::-moz-focus-inner {
   border: 0;
 }
+
+
+label {
+  position: relative;
+  margin-bottom: 0;
+}
+
+label span:first-of-type {
+  font-size: 1em;
+  @include for-big-desktop-up {
+    font-size: calc(1em + 0.1vw);
+  }
+  @include for-desktop-up {
+    font-size: 14px;
+  }
+}
+
+
+.overflov-hidden {
+  overflow-y: hidden;
+}
+
+
+
+
+
+/* .loading {
+  background-color: #fff;
+  z-index: 1000;
+
+  &_start {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    animation: loadingPage 1.3s;
+  }
+  &_done {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    animation: loadingPage 1.3s;
+  }
+} */
+
+
+
+
+
+
+
+
+
+
+
+/* .tabs{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  height: 100%;
+  width: 100%;
+
+
+  font-size: 25px;
+  line-height: 50px;
+  padding:0px;
+  list-style:none;
+  box-shadow:0px 5px 20px rgba(0,0,0,0.1);
+  //display:inline-block;
+  position:relative;
+}
+
+.tabs a{
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-decoration:none;
+  color: #FFFFFF;
+  position:relative;
+  z-index:1;
+  transition-duration:0.6s;
+  border-left: 1px solid #333333;
+}
+
+.tabs a.active{
+  color:#000000;
+}
+
+.tabs .selector{
+  height:100%;
+  display:inline-block;
+  position:absolute;
+  left:0px;
+  top:0px;
+  z-index:1;
+  transition-duration:0.6s;
+  background: #FFFFFF;
+
+} */
+

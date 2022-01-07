@@ -1,0 +1,61 @@
+.heading {
+  /* border-bottom: 1px solid #444444; */
+  position: relative;
+  &_border-white {
+
+  }
+  &_border-gray {
+    border-bottom: 1px solid #333333;
+    @include for-big-desktop-up {
+      border-bottom: calc(1px + 0.04vw) solid #333333;
+    }
+  }
+  &_animated {
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: rgba(255, 255, 255, 0.2);
+      animation: growElem 3s;
+      @include for-big-desktop-up {
+        height: calc(1px + 0.04vw);
+      }
+    }
+    @include for-tablet-landscape-up {
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: transparent;
+      }
+    }
+    @include for-tablet-portrait-up {
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: transparent;
+      }
+    }
+    @include for-phone-only {
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+    }
+  }
+}

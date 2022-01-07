@@ -16,10 +16,8 @@
     "gulp-cli": "^2.3.0",
     "gulp-htmlmin": "^5.0.1",
     "gulp-imagemin": "^6.2.0",
-    "gulp-pug": "^5.0.0",
     "gulp-rename": "^1.4.0",
-    "gulp-sass": "^5.0.0",
-    "sass": "^1.43.4"
+    "gulp-sass": "^4.1.0"
   },
   "browserslist": [
     "last 1 version",

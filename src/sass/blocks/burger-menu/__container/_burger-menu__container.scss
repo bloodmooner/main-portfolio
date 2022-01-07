@@ -1,0 +1,22 @@
+.burger-menu {
+    &__container {
+      width: 640px;
+      @include for-big-desktop-up {
+        width: 100%;
+      }
+      @include for-desktop-up {
+        width: 540px;
+      }
+      @include for-tablet-landscape-up {
+        width: 540px;
+      }
+      @include for-tablet-portrait-up {
+        width: 540px;
+        width: 100%;
+      }
+      @include for-phone-only {
+        width: 100%;
+      }
+    }
+
+}
